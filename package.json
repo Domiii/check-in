@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "app-module-path": "^2.2.0",
+    "bootstrap": "^4.3.1",
+    "firebase": "^6.2.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-router": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "reactstrap": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "domi-setup": "npm link ../learn-learn/src/unstated-ext && npm link ../learn-learn/src/features"
   },
   "eslintConfig": {
     "extends": "react-app"
