@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom'
 
-import connect from 'connect';
-import CurrentUser from 'state/CurrentUser';
-import NotLoaded from 'NotLoaded';
+import connect from 'unstated-ext/connect';
+import NotLoaded from 'unstated-ext/NotLoaded';
 
+import CurrentUser from 'api/CurrentUser';
 import RoleId from 'api/roles';
 
 import Loading from 'components/Loading';

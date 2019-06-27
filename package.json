@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "domi-setup": "npm link ../learn-learn/src/unstated-ext && npm link ../learn-learn/src/features"
+    "domi-setup": "npm link ./src && npm link ../learn-learn/src/unstated-ext && npm link ../learn-learn/src/features"
   },
   "eslintConfig": {
     "extends": "react-app"

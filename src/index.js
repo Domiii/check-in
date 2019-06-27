@@ -6,9 +6,6 @@ import * as serviceWorker from './serviceWorker';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
-// see: https://www.npmjs.com/package/app-module-path
-require('app-module-path').addPath(__dirname);
-
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

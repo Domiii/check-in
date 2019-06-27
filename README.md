@@ -1,3 +1,9 @@
+# TODO
+
+* add `src` path alias!
+* copy learn-learn files over
+
+
 # NOTES
 
 Steps taken
