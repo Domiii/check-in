@@ -13,6 +13,8 @@ import Icon from '@material-ui/core/Icon';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
+import { faChessKing } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Button, Badge } from 'reactstrap';
 
@@ -114,7 +116,7 @@ class AdminTools extends React.Component {
         color={active && 'success' || 'danger'}
         size="small"
       >
-        <Icon >star</Icon>
+        <FontAwesomeIcon icon={faChessKing} />
       </Button>
     </>);
   }

@@ -21,7 +21,7 @@ class AddCohortButton extends Component {
 
     if (name) {
       const { cohorts } = this.props;
-      cohorts.addCohort(name);
+      cohorts.createCohort(name);
     }
   }
 
