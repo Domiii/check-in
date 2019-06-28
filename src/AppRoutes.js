@@ -11,6 +11,10 @@ import Loading from 'components/Loading';
 
 import Login from './pages/Login';
 import Home from './pages/Home';
+
+import CohortPage from './features/cohorts/components/CohortPage';
+import CohortsPage from './features/cohorts/components/CohortsPage';
+
 import UserPage from './pages/UserPage';
 import AdminPage from './pages/AdminPage';
 
@@ -79,6 +83,8 @@ export default function AppRoutes() {
       <NoUserRoute exact path="/login" Comp={Login} />
 
       <UserRoute exact path="/" Comp={Home} />
+      <UserRoute path="/cohorts/:mine?" Comp={CohortsPage} />
+      <UserRoute path="/cohort/:cohortId?" Comp={CohortPage} />
 
       <AdminRoute exact path="/users" Comp={UserPage} />
       <AdminRoute path="/admin/:category?" Comp={AdminPage} />

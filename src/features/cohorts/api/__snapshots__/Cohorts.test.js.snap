@@ -1,0 +1,2920 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can create cohorts 1`] = `
+<Provider>
+  <Consumer>
+    <Provider
+      value={
+        Map {
+          [Function] => Cohorts {
+            "_listeners": Array [
+              [Function],
+            ],
+            "_queryRead": [Function],
+            "_registered": Map {
+              "all" => Object {
+                "mapFn": undefined,
+                "mergeRoot": undefined,
+                "ref": CollectionReference {
+                  "_query": Query {
+                    "collectionGroup": null,
+                    "endAt": null,
+                    "explicitOrderBy": Array [],
+                    "filters": Array [],
+                    "limit": null,
+                    "memoizedCanonicalId": null,
+                    "memoizedOrderBy": null,
+                    "path": ResourcePath {
+                      "len": 1,
+                      "offset": 0,
+                      "segments": Array [
+                        "test_cohorts",
+                      ],
+                    },
+                    "startAt": null,
+                  },
+                  "firestore": Firestore {
+                    "INTERNAL": Object {
+                      "delete": [Function],
+                    },
+                    "_config": FirestoreConfig {
+                      "credentials": FirebaseCredentialsProvider {
+                        "app": FirebaseAppImpl {
+                          "INTERNAL": Object {
+                            "addAuthTokenListener": [Function],
+                            "getToken": [Function],
+                            "getUid": [Function],
+                            "removeAuthTokenListener": [Function],
+                          },
+                          "_automaticDataCollectionEnabled": false,
+                          "firebase_": Object {
+                            "INTERNAL": Object {
+                              "ErrorFactory": [Function],
+                              "Promise": [Function],
+                              "createFirebaseNamespace": [Function],
+                              "createSubscribe": [Function],
+                              "deepExtend": [Function],
+                              "extendNamespace": [Function],
+                              "factories": Object {
+                                "auth": [Function],
+                                "database": [Function],
+                                "firestore": [Function],
+                              },
+                              "node": Object {
+                                "XMLHttpRequest": [Function],
+                                "localStorage": Storage {},
+                                "sessionStorage": Storage {},
+                              },
+                              "registerService": [Function],
+                              "removeApp": [Function],
+                              "useAsService": [Function],
+                            },
+                            "Promise": [Function],
+                            "SDK_VERSION": "5.9.4",
+                            "User": [Function],
+                            "__esModule": true,
+                            "app": [Function],
+                            "apps": Array [
+                              [Circular],
+                            ],
+                            "auth": [Function],
+                            "database": [Function],
+                            "default": [Circular],
+                            "firestore": [Function],
+                            "initializeApp": [Function],
+                          },
+                          "isDeleted_": false,
+                          "name_": "[DEFAULT]",
+                          "options_": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                            "messagingSenderId": "249308200308",
+                            "projectId": "learn-learn-b8e5a",
+                            "storageBucket": "",
+                          },
+                          "services_": Object {
+                            "auth": Object {
+                              "[DEFAULT]": Object {
+                                "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                                "appName": "[DEFAULT]",
+                                "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                                "currentUser": null,
+                              },
+                            },
+                            "firestore": Object {
+                              "[DEFAULT]": [Circular],
+                            },
+                          },
+                        },
+                        "changeListener": [Function],
+                        "currentUser": User {
+                          "uid": null,
+                        },
+                        "forceRefresh": false,
+                        "tokenCounter": 1,
+                        "tokenListener": [Function],
+                      },
+                      "databaseId": DatabaseId {
+                        "database": "(default)",
+                        "projectId": "learn-learn-b8e5a",
+                      },
+                      "firebaseApp": FirebaseAppImpl {
+                        "INTERNAL": Object {
+                          "addAuthTokenListener": [Function],
+                          "getToken": [Function],
+                          "getUid": [Function],
+                          "removeAuthTokenListener": [Function],
+                        },
+                        "_automaticDataCollectionEnabled": false,
+                        "firebase_": Object {
+                          "INTERNAL": Object {
+                            "ErrorFactory": [Function],
+                            "Promise": [Function],
+                            "createFirebaseNamespace": [Function],
+                            "createSubscribe": [Function],
+                            "deepExtend": [Function],
+                            "extendNamespace": [Function],
+                            "factories": Object {
+                              "auth": [Function],
+                              "database": [Function],
+                              "firestore": [Function],
+                            },
+                            "node": Object {
+                              "XMLHttpRequest": [Function],
+                              "localStorage": Storage {},
+                              "sessionStorage": Storage {},
+                            },
+                            "registerService": [Function],
+                            "removeApp": [Function],
+                            "useAsService": [Function],
+                          },
+                          "Promise": [Function],
+                          "SDK_VERSION": "5.9.4",
+                          "User": [Function],
+                          "__esModule": true,
+                          "app": [Function],
+                          "apps": Array [
+                            [Circular],
+                          ],
+                          "auth": [Function],
+                          "database": [Function],
+                          "default": [Circular],
+                          "firestore": [Function],
+                          "initializeApp": [Function],
+                        },
+                        "isDeleted_": false,
+                        "name_": "[DEFAULT]",
+                        "options_": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                          "messagingSenderId": "249308200308",
+                          "projectId": "learn-learn-b8e5a",
+                          "storageBucket": "",
+                        },
+                        "services_": Object {
+                          "auth": Object {
+                            "[DEFAULT]": Object {
+                              "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                              "appName": "[DEFAULT]",
+                              "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                              "currentUser": null,
+                            },
+                          },
+                          "firestore": Object {
+                            "[DEFAULT]": [Circular],
+                          },
+                        },
+                      },
+                      "persistenceKey": "[DEFAULT]",
+                      "settings": FirestoreSettings {
+                        "cacheSizeBytes": 41943040,
+                        "credentials": undefined,
+                        "host": "firestore.googleapis.com",
+                        "ssl": true,
+                        "timestampsInSnapshots": true,
+                      },
+                    },
+                    "_dataConverter": UserDataConverter {
+                      "preConverter": [Function],
+                    },
+                    "_databaseId": DatabaseId {
+                      "database": "(default)",
+                      "projectId": "learn-learn-b8e5a",
+                    },
+                    "_firestoreClient": FirestoreClient {
+                      "asyncQueue": AsyncQueue {
+                        "delayedOperations": Array [],
+                        "operationInProgress": false,
+                        "tail": Promise {},
+                      },
+                      "clientId": "6NNu6JX1egjWiDOHywTn",
+                      "credentials": FirebaseCredentialsProvider {
+                        "app": FirebaseAppImpl {
+                          "INTERNAL": Object {
+                            "addAuthTokenListener": [Function],
+                            "getToken": [Function],
+                            "getUid": [Function],
+                            "removeAuthTokenListener": [Function],
+                          },
+                          "_automaticDataCollectionEnabled": false,
+                          "firebase_": Object {
+                            "INTERNAL": Object {
+                              "ErrorFactory": [Function],
+                              "Promise": [Function],
+                              "createFirebaseNamespace": [Function],
+                              "createSubscribe": [Function],
+                              "deepExtend": [Function],
+                              "extendNamespace": [Function],
+                              "factories": Object {
+                                "auth": [Function],
+                                "database": [Function],
+                                "firestore": [Function],
+                              },
+                              "node": Object {
+                                "XMLHttpRequest": [Function],
+                                "localStorage": Storage {},
+                                "sessionStorage": Storage {},
+                              },
+                              "registerService": [Function],
+                              "removeApp": [Function],
+                              "useAsService": [Function],
+                            },
+                            "Promise": [Function],
+                            "SDK_VERSION": "5.9.4",
+                            "User": [Function],
+                            "__esModule": true,
+                            "app": [Function],
+                            "apps": Array [
+                              [Circular],
+                            ],
+                            "auth": [Function],
+                            "database": [Function],
+                            "default": [Circular],
+                            "firestore": [Function],
+                            "initializeApp": [Function],
+                          },
+                          "isDeleted_": false,
+                          "name_": "[DEFAULT]",
+                          "options_": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                            "messagingSenderId": "249308200308",
+                            "projectId": "learn-learn-b8e5a",
+                            "storageBucket": "",
+                          },
+                          "services_": Object {
+                            "auth": Object {
+                              "[DEFAULT]": Object {
+                                "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                                "appName": "[DEFAULT]",
+                                "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                                "currentUser": null,
+                              },
+                            },
+                            "firestore": Object {
+                              "[DEFAULT]": [Circular],
+                            },
+                          },
+                        },
+                        "changeListener": [Function],
+                        "currentUser": User {
+                          "uid": null,
+                        },
+                        "forceRefresh": false,
+                        "tokenCounter": 1,
+                        "tokenListener": [Function],
+                      },
+                      "databaseInfo": DatabaseInfo {
+                        "databaseId": DatabaseId {
+                          "database": "(default)",
+                          "projectId": "learn-learn-b8e5a",
+                        },
+                        "host": "firestore.googleapis.com",
+                        "persistenceKey": "[DEFAULT]",
+                        "ssl": true,
+                      },
+                      "persistence": MemoryPersistence {
+                        "_started": true,
+                        "clientId": "6NNu6JX1egjWiDOHywTn",
+                        "indexManager": MemoryIndexManager {
+                          "collectionParentIndex": MemoryCollectionParentIndex {
+                            "index": Object {},
+                          },
+                        },
+                        "listenSequence": ListenSequence {
+                          "previousValue": 0,
+                        },
+                        "mutationQueues": Object {},
+                        "queryCache": MemoryQueryCache {
+                          "highestSequenceNumber": 0,
+                          "highestTargetId": 0,
+                          "lastRemoteSnapshotVersion": SnapshotVersion {
+                            "timestamp": Timestamp {
+                              "nanoseconds": 0,
+                              "seconds": 0,
+                            },
+                          },
+                          "persistence": [Circular],
+                          "queries": ObjectMap {
+                            "inner": Object {},
+                            "mapKeyFn": [Function],
+                          },
+                          "references": ReferenceSet {
+                            "refsByKey": SortedSet {
+                              "comparator": [Function],
+                              "data": SortedMap {
+                                "comparator": [Function],
+                                "root": LLRBEmptyNode {
+                                  "size": 0,
+                                },
+                              },
+                            },
+                            "refsByTarget": SortedSet {
+                              "comparator": [Function],
+                              "data": SortedMap {
+                                "comparator": [Function],
+                                "root": LLRBEmptyNode {
+                                  "size": 0,
+                                },
+                              },
+                            },
+                          },
+                          "targetCount": 0,
+                          "targetIdGenerator": TargetIdGenerator {
+                            "generatorId": 0,
+                            "nextId": 2,
+                          },
+                        },
+                        "referenceDelegate": MemoryEagerDelegate {
+                          "persistence": [Circular],
+                        },
+                        "remoteDocumentCache": MemoryRemoteDocumentCache {
+                          "docs": SortedMap {
+                            "comparator": [Function],
+                            "root": LLRBEmptyNode {
+                              "size": 0,
+                            },
+                          },
+                          "indexManager": MemoryIndexManager {
+                            "collectionParentIndex": MemoryCollectionParentIndex {
+                              "index": Object {},
+                            },
+                          },
+                          "newDocumentChanges": SortedSet {
+                            "comparator": [Function],
+                            "data": SortedMap {
+                              "comparator": [Function],
+                              "root": LLRBEmptyNode {
+                                "size": 0,
+                              },
+                            },
+                          },
+                          "size": 0,
+                          "sizer": [Function],
+                        },
+                      },
+                      "platform": NodePlatform {
+                        "base64Available": true,
+                        "document": null,
+                        "emptyByteString": Uint8Array [],
+                      },
+                      "sharedClientState": MemorySharedClientState {
+                        "localState": LocalClientState {
+                          "activeTargetIds": SortedSet {
+                            "comparator": [Function],
+                            "data": SortedMap {
+                              "comparator": [Function],
+                              "root": LLRBEmptyNode {
+                                "size": 0,
+                              },
+                            },
+                          },
+                        },
+                        "onlineStateHandler": null,
+                        "queryState": Object {},
+                        "sequenceNumberHandler": null,
+                        "syncEngine": null,
+                      },
+                    },
+                    "_queue": AsyncQueue {
+                      "delayedOperations": Array [],
+                      "operationInProgress": false,
+                      "tail": Promise {},
+                    },
+                  },
+                },
+              },
+              "allCohortsArray" => Object {
+                "mapFn": [Function],
+                "mergeRoot": undefined,
+                "ref": CollectionReference {
+                  "_query": Query {
+                    "collectionGroup": null,
+                    "endAt": null,
+                    "explicitOrderBy": Array [],
+                    "filters": Array [],
+                    "limit": null,
+                    "memoizedCanonicalId": null,
+                    "memoizedOrderBy": null,
+                    "path": ResourcePath {
+                      "len": 1,
+                      "offset": 0,
+                      "segments": Array [
+                        "test_cohorts",
+                      ],
+                    },
+                    "startAt": null,
+                  },
+                  "firestore": Firestore {
+                    "INTERNAL": Object {
+                      "delete": [Function],
+                    },
+                    "_config": FirestoreConfig {
+                      "credentials": FirebaseCredentialsProvider {
+                        "app": FirebaseAppImpl {
+                          "INTERNAL": Object {
+                            "addAuthTokenListener": [Function],
+                            "getToken": [Function],
+                            "getUid": [Function],
+                            "removeAuthTokenListener": [Function],
+                          },
+                          "_automaticDataCollectionEnabled": false,
+                          "firebase_": Object {
+                            "INTERNAL": Object {
+                              "ErrorFactory": [Function],
+                              "Promise": [Function],
+                              "createFirebaseNamespace": [Function],
+                              "createSubscribe": [Function],
+                              "deepExtend": [Function],
+                              "extendNamespace": [Function],
+                              "factories": Object {
+                                "auth": [Function],
+                                "database": [Function],
+                                "firestore": [Function],
+                              },
+                              "node": Object {
+                                "XMLHttpRequest": [Function],
+                                "localStorage": Storage {},
+                                "sessionStorage": Storage {},
+                              },
+                              "registerService": [Function],
+                              "removeApp": [Function],
+                              "useAsService": [Function],
+                            },
+                            "Promise": [Function],
+                            "SDK_VERSION": "5.9.4",
+                            "User": [Function],
+                            "__esModule": true,
+                            "app": [Function],
+                            "apps": Array [
+                              [Circular],
+                            ],
+                            "auth": [Function],
+                            "database": [Function],
+                            "default": [Circular],
+                            "firestore": [Function],
+                            "initializeApp": [Function],
+                          },
+                          "isDeleted_": false,
+                          "name_": "[DEFAULT]",
+                          "options_": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                            "messagingSenderId": "249308200308",
+                            "projectId": "learn-learn-b8e5a",
+                            "storageBucket": "",
+                          },
+                          "services_": Object {
+                            "auth": Object {
+                              "[DEFAULT]": Object {
+                                "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                                "appName": "[DEFAULT]",
+                                "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                                "currentUser": null,
+                              },
+                            },
+                            "firestore": Object {
+                              "[DEFAULT]": [Circular],
+                            },
+                          },
+                        },
+                        "changeListener": [Function],
+                        "currentUser": User {
+                          "uid": null,
+                        },
+                        "forceRefresh": false,
+                        "tokenCounter": 1,
+                        "tokenListener": [Function],
+                      },
+                      "databaseId": DatabaseId {
+                        "database": "(default)",
+                        "projectId": "learn-learn-b8e5a",
+                      },
+                      "firebaseApp": FirebaseAppImpl {
+                        "INTERNAL": Object {
+                          "addAuthTokenListener": [Function],
+                          "getToken": [Function],
+                          "getUid": [Function],
+                          "removeAuthTokenListener": [Function],
+                        },
+                        "_automaticDataCollectionEnabled": false,
+                        "firebase_": Object {
+                          "INTERNAL": Object {
+                            "ErrorFactory": [Function],
+                            "Promise": [Function],
+                            "createFirebaseNamespace": [Function],
+                            "createSubscribe": [Function],
+                            "deepExtend": [Function],
+                            "extendNamespace": [Function],
+                            "factories": Object {
+                              "auth": [Function],
+                              "database": [Function],
+                              "firestore": [Function],
+                            },
+                            "node": Object {
+                              "XMLHttpRequest": [Function],
+                              "localStorage": Storage {},
+                              "sessionStorage": Storage {},
+                            },
+                            "registerService": [Function],
+                            "removeApp": [Function],
+                            "useAsService": [Function],
+                          },
+                          "Promise": [Function],
+                          "SDK_VERSION": "5.9.4",
+                          "User": [Function],
+                          "__esModule": true,
+                          "app": [Function],
+                          "apps": Array [
+                            [Circular],
+                          ],
+                          "auth": [Function],
+                          "database": [Function],
+                          "default": [Circular],
+                          "firestore": [Function],
+                          "initializeApp": [Function],
+                        },
+                        "isDeleted_": false,
+                        "name_": "[DEFAULT]",
+                        "options_": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                          "messagingSenderId": "249308200308",
+                          "projectId": "learn-learn-b8e5a",
+                          "storageBucket": "",
+                        },
+                        "services_": Object {
+                          "auth": Object {
+                            "[DEFAULT]": Object {
+                              "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                              "appName": "[DEFAULT]",
+                              "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                              "currentUser": null,
+                            },
+                          },
+                          "firestore": Object {
+                            "[DEFAULT]": [Circular],
+                          },
+                        },
+                      },
+                      "persistenceKey": "[DEFAULT]",
+                      "settings": FirestoreSettings {
+                        "cacheSizeBytes": 41943040,
+                        "credentials": undefined,
+                        "host": "firestore.googleapis.com",
+                        "ssl": true,
+                        "timestampsInSnapshots": true,
+                      },
+                    },
+                    "_dataConverter": UserDataConverter {
+                      "preConverter": [Function],
+                    },
+                    "_databaseId": DatabaseId {
+                      "database": "(default)",
+                      "projectId": "learn-learn-b8e5a",
+                    },
+                    "_firestoreClient": FirestoreClient {
+                      "asyncQueue": AsyncQueue {
+                        "delayedOperations": Array [],
+                        "operationInProgress": false,
+                        "tail": Promise {},
+                      },
+                      "clientId": "6NNu6JX1egjWiDOHywTn",
+                      "credentials": FirebaseCredentialsProvider {
+                        "app": FirebaseAppImpl {
+                          "INTERNAL": Object {
+                            "addAuthTokenListener": [Function],
+                            "getToken": [Function],
+                            "getUid": [Function],
+                            "removeAuthTokenListener": [Function],
+                          },
+                          "_automaticDataCollectionEnabled": false,
+                          "firebase_": Object {
+                            "INTERNAL": Object {
+                              "ErrorFactory": [Function],
+                              "Promise": [Function],
+                              "createFirebaseNamespace": [Function],
+                              "createSubscribe": [Function],
+                              "deepExtend": [Function],
+                              "extendNamespace": [Function],
+                              "factories": Object {
+                                "auth": [Function],
+                                "database": [Function],
+                                "firestore": [Function],
+                              },
+                              "node": Object {
+                                "XMLHttpRequest": [Function],
+                                "localStorage": Storage {},
+                                "sessionStorage": Storage {},
+                              },
+                              "registerService": [Function],
+                              "removeApp": [Function],
+                              "useAsService": [Function],
+                            },
+                            "Promise": [Function],
+                            "SDK_VERSION": "5.9.4",
+                            "User": [Function],
+                            "__esModule": true,
+                            "app": [Function],
+                            "apps": Array [
+                              [Circular],
+                            ],
+                            "auth": [Function],
+                            "database": [Function],
+                            "default": [Circular],
+                            "firestore": [Function],
+                            "initializeApp": [Function],
+                          },
+                          "isDeleted_": false,
+                          "name_": "[DEFAULT]",
+                          "options_": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                            "messagingSenderId": "249308200308",
+                            "projectId": "learn-learn-b8e5a",
+                            "storageBucket": "",
+                          },
+                          "services_": Object {
+                            "auth": Object {
+                              "[DEFAULT]": Object {
+                                "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                                "appName": "[DEFAULT]",
+                                "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                                "currentUser": null,
+                              },
+                            },
+                            "firestore": Object {
+                              "[DEFAULT]": [Circular],
+                            },
+                          },
+                        },
+                        "changeListener": [Function],
+                        "currentUser": User {
+                          "uid": null,
+                        },
+                        "forceRefresh": false,
+                        "tokenCounter": 1,
+                        "tokenListener": [Function],
+                      },
+                      "databaseInfo": DatabaseInfo {
+                        "databaseId": DatabaseId {
+                          "database": "(default)",
+                          "projectId": "learn-learn-b8e5a",
+                        },
+                        "host": "firestore.googleapis.com",
+                        "persistenceKey": "[DEFAULT]",
+                        "ssl": true,
+                      },
+                      "persistence": MemoryPersistence {
+                        "_started": true,
+                        "clientId": "6NNu6JX1egjWiDOHywTn",
+                        "indexManager": MemoryIndexManager {
+                          "collectionParentIndex": MemoryCollectionParentIndex {
+                            "index": Object {},
+                          },
+                        },
+                        "listenSequence": ListenSequence {
+                          "previousValue": 0,
+                        },
+                        "mutationQueues": Object {},
+                        "queryCache": MemoryQueryCache {
+                          "highestSequenceNumber": 0,
+                          "highestTargetId": 0,
+                          "lastRemoteSnapshotVersion": SnapshotVersion {
+                            "timestamp": Timestamp {
+                              "nanoseconds": 0,
+                              "seconds": 0,
+                            },
+                          },
+                          "persistence": [Circular],
+                          "queries": ObjectMap {
+                            "inner": Object {},
+                            "mapKeyFn": [Function],
+                          },
+                          "references": ReferenceSet {
+                            "refsByKey": SortedSet {
+                              "comparator": [Function],
+                              "data": SortedMap {
+                                "comparator": [Function],
+                                "root": LLRBEmptyNode {
+                                  "size": 0,
+                                },
+                              },
+                            },
+                            "refsByTarget": SortedSet {
+                              "comparator": [Function],
+                              "data": SortedMap {
+                                "comparator": [Function],
+                                "root": LLRBEmptyNode {
+                                  "size": 0,
+                                },
+                              },
+                            },
+                          },
+                          "targetCount": 0,
+                          "targetIdGenerator": TargetIdGenerator {
+                            "generatorId": 0,
+                            "nextId": 2,
+                          },
+                        },
+                        "referenceDelegate": MemoryEagerDelegate {
+                          "persistence": [Circular],
+                        },
+                        "remoteDocumentCache": MemoryRemoteDocumentCache {
+                          "docs": SortedMap {
+                            "comparator": [Function],
+                            "root": LLRBEmptyNode {
+                              "size": 0,
+                            },
+                          },
+                          "indexManager": MemoryIndexManager {
+                            "collectionParentIndex": MemoryCollectionParentIndex {
+                              "index": Object {},
+                            },
+                          },
+                          "newDocumentChanges": SortedSet {
+                            "comparator": [Function],
+                            "data": SortedMap {
+                              "comparator": [Function],
+                              "root": LLRBEmptyNode {
+                                "size": 0,
+                              },
+                            },
+                          },
+                          "size": 0,
+                          "sizer": [Function],
+                        },
+                      },
+                      "platform": NodePlatform {
+                        "base64Available": true,
+                        "document": null,
+                        "emptyByteString": Uint8Array [],
+                      },
+                      "sharedClientState": MemorySharedClientState {
+                        "localState": LocalClientState {
+                          "activeTargetIds": SortedSet {
+                            "comparator": [Function],
+                            "data": SortedMap {
+                              "comparator": [Function],
+                              "root": LLRBEmptyNode {
+                                "size": 0,
+                              },
+                            },
+                          },
+                        },
+                        "onlineStateHandler": null,
+                        "queryState": Object {},
+                        "sequenceNumberHandler": null,
+                        "syncEngine": null,
+                      },
+                    },
+                    "_queue": AsyncQueue {
+                      "delayedOperations": Array [],
+                      "operationInProgress": false,
+                      "tail": Promise {},
+                    },
+                  },
+                },
+              },
+              "byId" => Object {
+                "fullName": "test_cohorts.queries.byId",
+                "mapFn": [Function],
+                "mergeRoot": undefined,
+                "name": "byId",
+                "query": [Function],
+              },
+              "getCohort" => Object {
+                "fullName": "test_cohorts.queries.getCohort",
+                "mapFn": [Function],
+                "mergeRoot": undefined,
+                "name": "getCohort",
+                "query": [Function],
+              },
+              "cohortUserEntries" => Object {
+                "fullName": "test_cohorts.queries.cohortUserEntries",
+                "mapFn": undefined,
+                "mergeRoot": undefined,
+                "name": "cohortUserEntries",
+                "query": [Function],
+              },
+              "cohortIdsOfUser" => Object {
+                "fullName": "test_cohorts.queries.cohortIdsOfUser",
+                "mapFn": undefined,
+                "mergeRoot": undefined,
+                "name": "cohortIdsOfUser",
+                "query": [Function],
+              },
+              "cohortUserEntry" => Object {
+                "fullName": "test_cohorts.queries.cohortUserEntry",
+                "mapFn": undefined,
+                "mergeRoot": undefined,
+                "name": "cohortUserEntry",
+                "query": [Function],
+              },
+            },
+            "addUserToCohort": [Function],
+            "ceateCohort": [Function],
+            "collection": CollectionReference {
+              "_query": Query {
+                "collectionGroup": null,
+                "endAt": null,
+                "explicitOrderBy": Array [],
+                "filters": Array [],
+                "limit": null,
+                "memoizedCanonicalId": null,
+                "memoizedOrderBy": null,
+                "path": ResourcePath {
+                  "len": 1,
+                  "offset": 0,
+                  "segments": Array [
+                    "test_cohorts",
+                  ],
+                },
+                "startAt": null,
+              },
+              "firestore": Firestore {
+                "INTERNAL": Object {
+                  "delete": [Function],
+                },
+                "_config": FirestoreConfig {
+                  "credentials": FirebaseCredentialsProvider {
+                    "app": FirebaseAppImpl {
+                      "INTERNAL": Object {
+                        "addAuthTokenListener": [Function],
+                        "getToken": [Function],
+                        "getUid": [Function],
+                        "removeAuthTokenListener": [Function],
+                      },
+                      "_automaticDataCollectionEnabled": false,
+                      "firebase_": Object {
+                        "INTERNAL": Object {
+                          "ErrorFactory": [Function],
+                          "Promise": [Function],
+                          "createFirebaseNamespace": [Function],
+                          "createSubscribe": [Function],
+                          "deepExtend": [Function],
+                          "extendNamespace": [Function],
+                          "factories": Object {
+                            "auth": [Function],
+                            "database": [Function],
+                            "firestore": [Function],
+                          },
+                          "node": Object {
+                            "XMLHttpRequest": [Function],
+                            "localStorage": Storage {},
+                            "sessionStorage": Storage {},
+                          },
+                          "registerService": [Function],
+                          "removeApp": [Function],
+                          "useAsService": [Function],
+                        },
+                        "Promise": [Function],
+                        "SDK_VERSION": "5.9.4",
+                        "User": [Function],
+                        "__esModule": true,
+                        "app": [Function],
+                        "apps": Array [
+                          [Circular],
+                        ],
+                        "auth": [Function],
+                        "database": [Function],
+                        "default": [Circular],
+                        "firestore": [Function],
+                        "initializeApp": [Function],
+                      },
+                      "isDeleted_": false,
+                      "name_": "[DEFAULT]",
+                      "options_": Object {
+                        "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                        "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                        "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                        "messagingSenderId": "249308200308",
+                        "projectId": "learn-learn-b8e5a",
+                        "storageBucket": "",
+                      },
+                      "services_": Object {
+                        "auth": Object {
+                          "[DEFAULT]": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "appName": "[DEFAULT]",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "currentUser": null,
+                          },
+                        },
+                        "firestore": Object {
+                          "[DEFAULT]": [Circular],
+                        },
+                      },
+                    },
+                    "changeListener": [Function],
+                    "currentUser": User {
+                      "uid": null,
+                    },
+                    "forceRefresh": false,
+                    "tokenCounter": 1,
+                    "tokenListener": [Function],
+                  },
+                  "databaseId": DatabaseId {
+                    "database": "(default)",
+                    "projectId": "learn-learn-b8e5a",
+                  },
+                  "firebaseApp": FirebaseAppImpl {
+                    "INTERNAL": Object {
+                      "addAuthTokenListener": [Function],
+                      "getToken": [Function],
+                      "getUid": [Function],
+                      "removeAuthTokenListener": [Function],
+                    },
+                    "_automaticDataCollectionEnabled": false,
+                    "firebase_": Object {
+                      "INTERNAL": Object {
+                        "ErrorFactory": [Function],
+                        "Promise": [Function],
+                        "createFirebaseNamespace": [Function],
+                        "createSubscribe": [Function],
+                        "deepExtend": [Function],
+                        "extendNamespace": [Function],
+                        "factories": Object {
+                          "auth": [Function],
+                          "database": [Function],
+                          "firestore": [Function],
+                        },
+                        "node": Object {
+                          "XMLHttpRequest": [Function],
+                          "localStorage": Storage {},
+                          "sessionStorage": Storage {},
+                        },
+                        "registerService": [Function],
+                        "removeApp": [Function],
+                        "useAsService": [Function],
+                      },
+                      "Promise": [Function],
+                      "SDK_VERSION": "5.9.4",
+                      "User": [Function],
+                      "__esModule": true,
+                      "app": [Function],
+                      "apps": Array [
+                        [Circular],
+                      ],
+                      "auth": [Function],
+                      "database": [Function],
+                      "default": [Circular],
+                      "firestore": [Function],
+                      "initializeApp": [Function],
+                    },
+                    "isDeleted_": false,
+                    "name_": "[DEFAULT]",
+                    "options_": Object {
+                      "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                      "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                      "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                      "messagingSenderId": "249308200308",
+                      "projectId": "learn-learn-b8e5a",
+                      "storageBucket": "",
+                    },
+                    "services_": Object {
+                      "auth": Object {
+                        "[DEFAULT]": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "appName": "[DEFAULT]",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "currentUser": null,
+                        },
+                      },
+                      "firestore": Object {
+                        "[DEFAULT]": [Circular],
+                      },
+                    },
+                  },
+                  "persistenceKey": "[DEFAULT]",
+                  "settings": FirestoreSettings {
+                    "cacheSizeBytes": 41943040,
+                    "credentials": undefined,
+                    "host": "firestore.googleapis.com",
+                    "ssl": true,
+                    "timestampsInSnapshots": true,
+                  },
+                },
+                "_dataConverter": UserDataConverter {
+                  "preConverter": [Function],
+                },
+                "_databaseId": DatabaseId {
+                  "database": "(default)",
+                  "projectId": "learn-learn-b8e5a",
+                },
+                "_firestoreClient": FirestoreClient {
+                  "asyncQueue": AsyncQueue {
+                    "delayedOperations": Array [],
+                    "operationInProgress": false,
+                    "tail": Promise {},
+                  },
+                  "clientId": "6NNu6JX1egjWiDOHywTn",
+                  "credentials": FirebaseCredentialsProvider {
+                    "app": FirebaseAppImpl {
+                      "INTERNAL": Object {
+                        "addAuthTokenListener": [Function],
+                        "getToken": [Function],
+                        "getUid": [Function],
+                        "removeAuthTokenListener": [Function],
+                      },
+                      "_automaticDataCollectionEnabled": false,
+                      "firebase_": Object {
+                        "INTERNAL": Object {
+                          "ErrorFactory": [Function],
+                          "Promise": [Function],
+                          "createFirebaseNamespace": [Function],
+                          "createSubscribe": [Function],
+                          "deepExtend": [Function],
+                          "extendNamespace": [Function],
+                          "factories": Object {
+                            "auth": [Function],
+                            "database": [Function],
+                            "firestore": [Function],
+                          },
+                          "node": Object {
+                            "XMLHttpRequest": [Function],
+                            "localStorage": Storage {},
+                            "sessionStorage": Storage {},
+                          },
+                          "registerService": [Function],
+                          "removeApp": [Function],
+                          "useAsService": [Function],
+                        },
+                        "Promise": [Function],
+                        "SDK_VERSION": "5.9.4",
+                        "User": [Function],
+                        "__esModule": true,
+                        "app": [Function],
+                        "apps": Array [
+                          [Circular],
+                        ],
+                        "auth": [Function],
+                        "database": [Function],
+                        "default": [Circular],
+                        "firestore": [Function],
+                        "initializeApp": [Function],
+                      },
+                      "isDeleted_": false,
+                      "name_": "[DEFAULT]",
+                      "options_": Object {
+                        "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                        "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                        "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                        "messagingSenderId": "249308200308",
+                        "projectId": "learn-learn-b8e5a",
+                        "storageBucket": "",
+                      },
+                      "services_": Object {
+                        "auth": Object {
+                          "[DEFAULT]": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "appName": "[DEFAULT]",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "currentUser": null,
+                          },
+                        },
+                        "firestore": Object {
+                          "[DEFAULT]": [Circular],
+                        },
+                      },
+                    },
+                    "changeListener": [Function],
+                    "currentUser": User {
+                      "uid": null,
+                    },
+                    "forceRefresh": false,
+                    "tokenCounter": 1,
+                    "tokenListener": [Function],
+                  },
+                  "databaseInfo": DatabaseInfo {
+                    "databaseId": DatabaseId {
+                      "database": "(default)",
+                      "projectId": "learn-learn-b8e5a",
+                    },
+                    "host": "firestore.googleapis.com",
+                    "persistenceKey": "[DEFAULT]",
+                    "ssl": true,
+                  },
+                  "persistence": MemoryPersistence {
+                    "_started": true,
+                    "clientId": "6NNu6JX1egjWiDOHywTn",
+                    "indexManager": MemoryIndexManager {
+                      "collectionParentIndex": MemoryCollectionParentIndex {
+                        "index": Object {},
+                      },
+                    },
+                    "listenSequence": ListenSequence {
+                      "previousValue": 0,
+                    },
+                    "mutationQueues": Object {},
+                    "queryCache": MemoryQueryCache {
+                      "highestSequenceNumber": 0,
+                      "highestTargetId": 0,
+                      "lastRemoteSnapshotVersion": SnapshotVersion {
+                        "timestamp": Timestamp {
+                          "nanoseconds": 0,
+                          "seconds": 0,
+                        },
+                      },
+                      "persistence": [Circular],
+                      "queries": ObjectMap {
+                        "inner": Object {},
+                        "mapKeyFn": [Function],
+                      },
+                      "references": ReferenceSet {
+                        "refsByKey": SortedSet {
+                          "comparator": [Function],
+                          "data": SortedMap {
+                            "comparator": [Function],
+                            "root": LLRBEmptyNode {
+                              "size": 0,
+                            },
+                          },
+                        },
+                        "refsByTarget": SortedSet {
+                          "comparator": [Function],
+                          "data": SortedMap {
+                            "comparator": [Function],
+                            "root": LLRBEmptyNode {
+                              "size": 0,
+                            },
+                          },
+                        },
+                      },
+                      "targetCount": 0,
+                      "targetIdGenerator": TargetIdGenerator {
+                        "generatorId": 0,
+                        "nextId": 2,
+                      },
+                    },
+                    "referenceDelegate": MemoryEagerDelegate {
+                      "persistence": [Circular],
+                    },
+                    "remoteDocumentCache": MemoryRemoteDocumentCache {
+                      "docs": SortedMap {
+                        "comparator": [Function],
+                        "root": LLRBEmptyNode {
+                          "size": 0,
+                        },
+                      },
+                      "indexManager": MemoryIndexManager {
+                        "collectionParentIndex": MemoryCollectionParentIndex {
+                          "index": Object {},
+                        },
+                      },
+                      "newDocumentChanges": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                      "size": 0,
+                      "sizer": [Function],
+                    },
+                  },
+                  "platform": NodePlatform {
+                    "base64Available": true,
+                    "document": null,
+                    "emptyByteString": Uint8Array [],
+                  },
+                  "sharedClientState": MemorySharedClientState {
+                    "localState": LocalClientState {
+                      "activeTargetIds": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                    },
+                    "onlineStateHandler": null,
+                    "queryState": Object {},
+                    "sequenceNumberHandler": null,
+                    "syncEngine": null,
+                  },
+                },
+                "_queue": AsyncQueue {
+                  "delayedOperations": Array [],
+                  "operationInProgress": false,
+                  "tail": Promise {},
+                },
+              },
+            },
+            "collectionName": "test_cohorts",
+            "db": Firestore {
+              "INTERNAL": Object {
+                "delete": [Function],
+              },
+              "_config": FirestoreConfig {
+                "credentials": FirebaseCredentialsProvider {
+                  "app": FirebaseAppImpl {
+                    "INTERNAL": Object {
+                      "addAuthTokenListener": [Function],
+                      "getToken": [Function],
+                      "getUid": [Function],
+                      "removeAuthTokenListener": [Function],
+                    },
+                    "_automaticDataCollectionEnabled": false,
+                    "firebase_": Object {
+                      "INTERNAL": Object {
+                        "ErrorFactory": [Function],
+                        "Promise": [Function],
+                        "createFirebaseNamespace": [Function],
+                        "createSubscribe": [Function],
+                        "deepExtend": [Function],
+                        "extendNamespace": [Function],
+                        "factories": Object {
+                          "auth": [Function],
+                          "database": [Function],
+                          "firestore": [Function],
+                        },
+                        "node": Object {
+                          "XMLHttpRequest": [Function],
+                          "localStorage": Storage {},
+                          "sessionStorage": Storage {},
+                        },
+                        "registerService": [Function],
+                        "removeApp": [Function],
+                        "useAsService": [Function],
+                      },
+                      "Promise": [Function],
+                      "SDK_VERSION": "5.9.4",
+                      "User": [Function],
+                      "__esModule": true,
+                      "app": [Function],
+                      "apps": Array [
+                        [Circular],
+                      ],
+                      "auth": [Function],
+                      "database": [Function],
+                      "default": [Circular],
+                      "firestore": [Function],
+                      "initializeApp": [Function],
+                    },
+                    "isDeleted_": false,
+                    "name_": "[DEFAULT]",
+                    "options_": Object {
+                      "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                      "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                      "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                      "messagingSenderId": "249308200308",
+                      "projectId": "learn-learn-b8e5a",
+                      "storageBucket": "",
+                    },
+                    "services_": Object {
+                      "auth": Object {
+                        "[DEFAULT]": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "appName": "[DEFAULT]",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "currentUser": null,
+                        },
+                      },
+                      "firestore": Object {
+                        "[DEFAULT]": [Circular],
+                      },
+                    },
+                  },
+                  "changeListener": [Function],
+                  "currentUser": User {
+                    "uid": null,
+                  },
+                  "forceRefresh": false,
+                  "tokenCounter": 1,
+                  "tokenListener": [Function],
+                },
+                "databaseId": DatabaseId {
+                  "database": "(default)",
+                  "projectId": "learn-learn-b8e5a",
+                },
+                "firebaseApp": FirebaseAppImpl {
+                  "INTERNAL": Object {
+                    "addAuthTokenListener": [Function],
+                    "getToken": [Function],
+                    "getUid": [Function],
+                    "removeAuthTokenListener": [Function],
+                  },
+                  "_automaticDataCollectionEnabled": false,
+                  "firebase_": Object {
+                    "INTERNAL": Object {
+                      "ErrorFactory": [Function],
+                      "Promise": [Function],
+                      "createFirebaseNamespace": [Function],
+                      "createSubscribe": [Function],
+                      "deepExtend": [Function],
+                      "extendNamespace": [Function],
+                      "factories": Object {
+                        "auth": [Function],
+                        "database": [Function],
+                        "firestore": [Function],
+                      },
+                      "node": Object {
+                        "XMLHttpRequest": [Function],
+                        "localStorage": Storage {},
+                        "sessionStorage": Storage {},
+                      },
+                      "registerService": [Function],
+                      "removeApp": [Function],
+                      "useAsService": [Function],
+                    },
+                    "Promise": [Function],
+                    "SDK_VERSION": "5.9.4",
+                    "User": [Function],
+                    "__esModule": true,
+                    "app": [Function],
+                    "apps": Array [
+                      [Circular],
+                    ],
+                    "auth": [Function],
+                    "database": [Function],
+                    "default": [Circular],
+                    "firestore": [Function],
+                    "initializeApp": [Function],
+                  },
+                  "isDeleted_": false,
+                  "name_": "[DEFAULT]",
+                  "options_": Object {
+                    "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                    "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                    "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                    "messagingSenderId": "249308200308",
+                    "projectId": "learn-learn-b8e5a",
+                    "storageBucket": "",
+                  },
+                  "services_": Object {
+                    "auth": Object {
+                      "[DEFAULT]": Object {
+                        "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                        "appName": "[DEFAULT]",
+                        "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                        "currentUser": null,
+                      },
+                    },
+                    "firestore": Object {
+                      "[DEFAULT]": [Circular],
+                    },
+                  },
+                },
+                "persistenceKey": "[DEFAULT]",
+                "settings": FirestoreSettings {
+                  "cacheSizeBytes": 41943040,
+                  "credentials": undefined,
+                  "host": "firestore.googleapis.com",
+                  "ssl": true,
+                  "timestampsInSnapshots": true,
+                },
+              },
+              "_dataConverter": UserDataConverter {
+                "preConverter": [Function],
+              },
+              "_databaseId": DatabaseId {
+                "database": "(default)",
+                "projectId": "learn-learn-b8e5a",
+              },
+              "_firestoreClient": FirestoreClient {
+                "asyncQueue": AsyncQueue {
+                  "delayedOperations": Array [],
+                  "operationInProgress": false,
+                  "tail": Promise {},
+                },
+                "clientId": "6NNu6JX1egjWiDOHywTn",
+                "credentials": FirebaseCredentialsProvider {
+                  "app": FirebaseAppImpl {
+                    "INTERNAL": Object {
+                      "addAuthTokenListener": [Function],
+                      "getToken": [Function],
+                      "getUid": [Function],
+                      "removeAuthTokenListener": [Function],
+                    },
+                    "_automaticDataCollectionEnabled": false,
+                    "firebase_": Object {
+                      "INTERNAL": Object {
+                        "ErrorFactory": [Function],
+                        "Promise": [Function],
+                        "createFirebaseNamespace": [Function],
+                        "createSubscribe": [Function],
+                        "deepExtend": [Function],
+                        "extendNamespace": [Function],
+                        "factories": Object {
+                          "auth": [Function],
+                          "database": [Function],
+                          "firestore": [Function],
+                        },
+                        "node": Object {
+                          "XMLHttpRequest": [Function],
+                          "localStorage": Storage {},
+                          "sessionStorage": Storage {},
+                        },
+                        "registerService": [Function],
+                        "removeApp": [Function],
+                        "useAsService": [Function],
+                      },
+                      "Promise": [Function],
+                      "SDK_VERSION": "5.9.4",
+                      "User": [Function],
+                      "__esModule": true,
+                      "app": [Function],
+                      "apps": Array [
+                        [Circular],
+                      ],
+                      "auth": [Function],
+                      "database": [Function],
+                      "default": [Circular],
+                      "firestore": [Function],
+                      "initializeApp": [Function],
+                    },
+                    "isDeleted_": false,
+                    "name_": "[DEFAULT]",
+                    "options_": Object {
+                      "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                      "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                      "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                      "messagingSenderId": "249308200308",
+                      "projectId": "learn-learn-b8e5a",
+                      "storageBucket": "",
+                    },
+                    "services_": Object {
+                      "auth": Object {
+                        "[DEFAULT]": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "appName": "[DEFAULT]",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "currentUser": null,
+                        },
+                      },
+                      "firestore": Object {
+                        "[DEFAULT]": [Circular],
+                      },
+                    },
+                  },
+                  "changeListener": [Function],
+                  "currentUser": User {
+                    "uid": null,
+                  },
+                  "forceRefresh": false,
+                  "tokenCounter": 1,
+                  "tokenListener": [Function],
+                },
+                "databaseInfo": DatabaseInfo {
+                  "databaseId": DatabaseId {
+                    "database": "(default)",
+                    "projectId": "learn-learn-b8e5a",
+                  },
+                  "host": "firestore.googleapis.com",
+                  "persistenceKey": "[DEFAULT]",
+                  "ssl": true,
+                },
+                "persistence": MemoryPersistence {
+                  "_started": true,
+                  "clientId": "6NNu6JX1egjWiDOHywTn",
+                  "indexManager": MemoryIndexManager {
+                    "collectionParentIndex": MemoryCollectionParentIndex {
+                      "index": Object {},
+                    },
+                  },
+                  "listenSequence": ListenSequence {
+                    "previousValue": 0,
+                  },
+                  "mutationQueues": Object {},
+                  "queryCache": MemoryQueryCache {
+                    "highestSequenceNumber": 0,
+                    "highestTargetId": 0,
+                    "lastRemoteSnapshotVersion": SnapshotVersion {
+                      "timestamp": Timestamp {
+                        "nanoseconds": 0,
+                        "seconds": 0,
+                      },
+                    },
+                    "persistence": [Circular],
+                    "queries": ObjectMap {
+                      "inner": Object {},
+                      "mapKeyFn": [Function],
+                    },
+                    "references": ReferenceSet {
+                      "refsByKey": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                      "refsByTarget": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                    },
+                    "targetCount": 0,
+                    "targetIdGenerator": TargetIdGenerator {
+                      "generatorId": 0,
+                      "nextId": 2,
+                    },
+                  },
+                  "referenceDelegate": MemoryEagerDelegate {
+                    "persistence": [Circular],
+                  },
+                  "remoteDocumentCache": MemoryRemoteDocumentCache {
+                    "docs": SortedMap {
+                      "comparator": [Function],
+                      "root": LLRBEmptyNode {
+                        "size": 0,
+                      },
+                    },
+                    "indexManager": MemoryIndexManager {
+                      "collectionParentIndex": MemoryCollectionParentIndex {
+                        "index": Object {},
+                      },
+                    },
+                    "newDocumentChanges": SortedSet {
+                      "comparator": [Function],
+                      "data": SortedMap {
+                        "comparator": [Function],
+                        "root": LLRBEmptyNode {
+                          "size": 0,
+                        },
+                      },
+                    },
+                    "size": 0,
+                    "sizer": [Function],
+                  },
+                },
+                "platform": NodePlatform {
+                  "base64Available": true,
+                  "document": null,
+                  "emptyByteString": Uint8Array [],
+                },
+                "sharedClientState": MemorySharedClientState {
+                  "localState": LocalClientState {
+                    "activeTargetIds": SortedSet {
+                      "comparator": [Function],
+                      "data": SortedMap {
+                        "comparator": [Function],
+                        "root": LLRBEmptyNode {
+                          "size": 0,
+                        },
+                      },
+                    },
+                  },
+                  "onlineStateHandler": null,
+                  "queryState": Object {},
+                  "sequenceNumberHandler": null,
+                  "syncEngine": null,
+                },
+              },
+              "_queue": AsyncQueue {
+                "delayedOperations": Array [],
+                "operationInProgress": false,
+                "tail": Promise {},
+              },
+            },
+            "deps": Object {},
+            "doc": [Function],
+            "getCohortIdsOfUser": [Function],
+            "getCohortName": [Function],
+            "getCohortUserEntry": [Function],
+            "getUidsOfCohort": [Function],
+            "getUsersOfCohort": [Function],
+            "registerQueries": [Function],
+            "registerValues": [Function],
+            "removeUserFromCohort": [Function],
+            "snapToById": [Function],
+            "state": Object {
+              "_queryStates": Object {
+                "byId": Object {
+                  "cache": Object {},
+                  "loadStatus": Object {},
+                },
+                "cohortIdsOfUser": Object {
+                  "cache": Object {},
+                  "loadStatus": Object {},
+                },
+                "cohortUserEntries": Object {
+                  "cache": Object {},
+                  "loadStatus": Object {},
+                },
+                "cohortUserEntry": Object {
+                  "cache": Object {},
+                  "loadStatus": Object {},
+                },
+                "getCohort": Object {
+                  "cache": Object {},
+                  "loadStatus": Object {},
+                },
+              },
+              "_state": true,
+              "addUserToCohort": [Function],
+              "all": undefined,
+              "allCohortsArray": undefined,
+              "byId": [Function],
+              "ceateCohort": [Function],
+              "cohortIdsOfUser": [Function],
+              "cohortUserEntries": [Function],
+              "cohortUserEntry": [Function],
+              "getCohort": [Function],
+              "getCohortIdsOfUser": [Function],
+              "getCohortName": [Function],
+              "getCohortUserEntry": [Function],
+              "getUidsOfCohort": [Function],
+              "getUsersOfCohort": [Function],
+              "removeUserFromCohort": [Function],
+            },
+            "toString": [Function],
+          },
+          [Function] => Users {
+            "_listeners": Array [
+              [Function],
+            ],
+            "_queryRead": [Function],
+            "_registered": Map {
+              "all" => Object {
+                "mapFn": [Function],
+                "mergeRoot": undefined,
+                "ref": CollectionReference {
+                  "_query": Query {
+                    "collectionGroup": null,
+                    "endAt": null,
+                    "explicitOrderBy": Array [],
+                    "filters": Array [],
+                    "limit": null,
+                    "memoizedCanonicalId": null,
+                    "memoizedOrderBy": null,
+                    "path": ResourcePath {
+                      "len": 1,
+                      "offset": 0,
+                      "segments": Array [
+                        "users",
+                      ],
+                    },
+                    "startAt": null,
+                  },
+                  "firestore": Firestore {
+                    "INTERNAL": Object {
+                      "delete": [Function],
+                    },
+                    "_config": FirestoreConfig {
+                      "credentials": FirebaseCredentialsProvider {
+                        "app": FirebaseAppImpl {
+                          "INTERNAL": Object {
+                            "addAuthTokenListener": [Function],
+                            "getToken": [Function],
+                            "getUid": [Function],
+                            "removeAuthTokenListener": [Function],
+                          },
+                          "_automaticDataCollectionEnabled": false,
+                          "firebase_": Object {
+                            "INTERNAL": Object {
+                              "ErrorFactory": [Function],
+                              "Promise": [Function],
+                              "createFirebaseNamespace": [Function],
+                              "createSubscribe": [Function],
+                              "deepExtend": [Function],
+                              "extendNamespace": [Function],
+                              "factories": Object {
+                                "auth": [Function],
+                                "database": [Function],
+                                "firestore": [Function],
+                              },
+                              "node": Object {
+                                "XMLHttpRequest": [Function],
+                                "localStorage": Storage {},
+                                "sessionStorage": Storage {},
+                              },
+                              "registerService": [Function],
+                              "removeApp": [Function],
+                              "useAsService": [Function],
+                            },
+                            "Promise": [Function],
+                            "SDK_VERSION": "5.9.4",
+                            "User": [Function],
+                            "__esModule": true,
+                            "app": [Function],
+                            "apps": Array [
+                              [Circular],
+                            ],
+                            "auth": [Function],
+                            "database": [Function],
+                            "default": [Circular],
+                            "firestore": [Function],
+                            "initializeApp": [Function],
+                          },
+                          "isDeleted_": false,
+                          "name_": "[DEFAULT]",
+                          "options_": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                            "messagingSenderId": "249308200308",
+                            "projectId": "learn-learn-b8e5a",
+                            "storageBucket": "",
+                          },
+                          "services_": Object {
+                            "auth": Object {
+                              "[DEFAULT]": Object {
+                                "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                                "appName": "[DEFAULT]",
+                                "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                                "currentUser": null,
+                              },
+                            },
+                            "firestore": Object {
+                              "[DEFAULT]": [Circular],
+                            },
+                          },
+                        },
+                        "changeListener": [Function],
+                        "currentUser": User {
+                          "uid": null,
+                        },
+                        "forceRefresh": false,
+                        "tokenCounter": 1,
+                        "tokenListener": [Function],
+                      },
+                      "databaseId": DatabaseId {
+                        "database": "(default)",
+                        "projectId": "learn-learn-b8e5a",
+                      },
+                      "firebaseApp": FirebaseAppImpl {
+                        "INTERNAL": Object {
+                          "addAuthTokenListener": [Function],
+                          "getToken": [Function],
+                          "getUid": [Function],
+                          "removeAuthTokenListener": [Function],
+                        },
+                        "_automaticDataCollectionEnabled": false,
+                        "firebase_": Object {
+                          "INTERNAL": Object {
+                            "ErrorFactory": [Function],
+                            "Promise": [Function],
+                            "createFirebaseNamespace": [Function],
+                            "createSubscribe": [Function],
+                            "deepExtend": [Function],
+                            "extendNamespace": [Function],
+                            "factories": Object {
+                              "auth": [Function],
+                              "database": [Function],
+                              "firestore": [Function],
+                            },
+                            "node": Object {
+                              "XMLHttpRequest": [Function],
+                              "localStorage": Storage {},
+                              "sessionStorage": Storage {},
+                            },
+                            "registerService": [Function],
+                            "removeApp": [Function],
+                            "useAsService": [Function],
+                          },
+                          "Promise": [Function],
+                          "SDK_VERSION": "5.9.4",
+                          "User": [Function],
+                          "__esModule": true,
+                          "app": [Function],
+                          "apps": Array [
+                            [Circular],
+                          ],
+                          "auth": [Function],
+                          "database": [Function],
+                          "default": [Circular],
+                          "firestore": [Function],
+                          "initializeApp": [Function],
+                        },
+                        "isDeleted_": false,
+                        "name_": "[DEFAULT]",
+                        "options_": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                          "messagingSenderId": "249308200308",
+                          "projectId": "learn-learn-b8e5a",
+                          "storageBucket": "",
+                        },
+                        "services_": Object {
+                          "auth": Object {
+                            "[DEFAULT]": Object {
+                              "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                              "appName": "[DEFAULT]",
+                              "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                              "currentUser": null,
+                            },
+                          },
+                          "firestore": Object {
+                            "[DEFAULT]": [Circular],
+                          },
+                        },
+                      },
+                      "persistenceKey": "[DEFAULT]",
+                      "settings": FirestoreSettings {
+                        "cacheSizeBytes": 41943040,
+                        "credentials": undefined,
+                        "host": "firestore.googleapis.com",
+                        "ssl": true,
+                        "timestampsInSnapshots": true,
+                      },
+                    },
+                    "_dataConverter": UserDataConverter {
+                      "preConverter": [Function],
+                    },
+                    "_databaseId": DatabaseId {
+                      "database": "(default)",
+                      "projectId": "learn-learn-b8e5a",
+                    },
+                    "_firestoreClient": FirestoreClient {
+                      "asyncQueue": AsyncQueue {
+                        "delayedOperations": Array [],
+                        "operationInProgress": false,
+                        "tail": Promise {},
+                      },
+                      "clientId": "6NNu6JX1egjWiDOHywTn",
+                      "credentials": FirebaseCredentialsProvider {
+                        "app": FirebaseAppImpl {
+                          "INTERNAL": Object {
+                            "addAuthTokenListener": [Function],
+                            "getToken": [Function],
+                            "getUid": [Function],
+                            "removeAuthTokenListener": [Function],
+                          },
+                          "_automaticDataCollectionEnabled": false,
+                          "firebase_": Object {
+                            "INTERNAL": Object {
+                              "ErrorFactory": [Function],
+                              "Promise": [Function],
+                              "createFirebaseNamespace": [Function],
+                              "createSubscribe": [Function],
+                              "deepExtend": [Function],
+                              "extendNamespace": [Function],
+                              "factories": Object {
+                                "auth": [Function],
+                                "database": [Function],
+                                "firestore": [Function],
+                              },
+                              "node": Object {
+                                "XMLHttpRequest": [Function],
+                                "localStorage": Storage {},
+                                "sessionStorage": Storage {},
+                              },
+                              "registerService": [Function],
+                              "removeApp": [Function],
+                              "useAsService": [Function],
+                            },
+                            "Promise": [Function],
+                            "SDK_VERSION": "5.9.4",
+                            "User": [Function],
+                            "__esModule": true,
+                            "app": [Function],
+                            "apps": Array [
+                              [Circular],
+                            ],
+                            "auth": [Function],
+                            "database": [Function],
+                            "default": [Circular],
+                            "firestore": [Function],
+                            "initializeApp": [Function],
+                          },
+                          "isDeleted_": false,
+                          "name_": "[DEFAULT]",
+                          "options_": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                            "messagingSenderId": "249308200308",
+                            "projectId": "learn-learn-b8e5a",
+                            "storageBucket": "",
+                          },
+                          "services_": Object {
+                            "auth": Object {
+                              "[DEFAULT]": Object {
+                                "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                                "appName": "[DEFAULT]",
+                                "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                                "currentUser": null,
+                              },
+                            },
+                            "firestore": Object {
+                              "[DEFAULT]": [Circular],
+                            },
+                          },
+                        },
+                        "changeListener": [Function],
+                        "currentUser": User {
+                          "uid": null,
+                        },
+                        "forceRefresh": false,
+                        "tokenCounter": 1,
+                        "tokenListener": [Function],
+                      },
+                      "databaseInfo": DatabaseInfo {
+                        "databaseId": DatabaseId {
+                          "database": "(default)",
+                          "projectId": "learn-learn-b8e5a",
+                        },
+                        "host": "firestore.googleapis.com",
+                        "persistenceKey": "[DEFAULT]",
+                        "ssl": true,
+                      },
+                      "persistence": MemoryPersistence {
+                        "_started": true,
+                        "clientId": "6NNu6JX1egjWiDOHywTn",
+                        "indexManager": MemoryIndexManager {
+                          "collectionParentIndex": MemoryCollectionParentIndex {
+                            "index": Object {},
+                          },
+                        },
+                        "listenSequence": ListenSequence {
+                          "previousValue": 0,
+                        },
+                        "mutationQueues": Object {},
+                        "queryCache": MemoryQueryCache {
+                          "highestSequenceNumber": 0,
+                          "highestTargetId": 0,
+                          "lastRemoteSnapshotVersion": SnapshotVersion {
+                            "timestamp": Timestamp {
+                              "nanoseconds": 0,
+                              "seconds": 0,
+                            },
+                          },
+                          "persistence": [Circular],
+                          "queries": ObjectMap {
+                            "inner": Object {},
+                            "mapKeyFn": [Function],
+                          },
+                          "references": ReferenceSet {
+                            "refsByKey": SortedSet {
+                              "comparator": [Function],
+                              "data": SortedMap {
+                                "comparator": [Function],
+                                "root": LLRBEmptyNode {
+                                  "size": 0,
+                                },
+                              },
+                            },
+                            "refsByTarget": SortedSet {
+                              "comparator": [Function],
+                              "data": SortedMap {
+                                "comparator": [Function],
+                                "root": LLRBEmptyNode {
+                                  "size": 0,
+                                },
+                              },
+                            },
+                          },
+                          "targetCount": 0,
+                          "targetIdGenerator": TargetIdGenerator {
+                            "generatorId": 0,
+                            "nextId": 2,
+                          },
+                        },
+                        "referenceDelegate": MemoryEagerDelegate {
+                          "persistence": [Circular],
+                        },
+                        "remoteDocumentCache": MemoryRemoteDocumentCache {
+                          "docs": SortedMap {
+                            "comparator": [Function],
+                            "root": LLRBEmptyNode {
+                              "size": 0,
+                            },
+                          },
+                          "indexManager": MemoryIndexManager {
+                            "collectionParentIndex": MemoryCollectionParentIndex {
+                              "index": Object {},
+                            },
+                          },
+                          "newDocumentChanges": SortedSet {
+                            "comparator": [Function],
+                            "data": SortedMap {
+                              "comparator": [Function],
+                              "root": LLRBEmptyNode {
+                                "size": 0,
+                              },
+                            },
+                          },
+                          "size": 0,
+                          "sizer": [Function],
+                        },
+                      },
+                      "platform": NodePlatform {
+                        "base64Available": true,
+                        "document": null,
+                        "emptyByteString": Uint8Array [],
+                      },
+                      "sharedClientState": MemorySharedClientState {
+                        "localState": LocalClientState {
+                          "activeTargetIds": SortedSet {
+                            "comparator": [Function],
+                            "data": SortedMap {
+                              "comparator": [Function],
+                              "root": LLRBEmptyNode {
+                                "size": 0,
+                              },
+                            },
+                          },
+                        },
+                        "onlineStateHandler": null,
+                        "queryState": Object {},
+                        "sequenceNumberHandler": null,
+                        "syncEngine": null,
+                      },
+                    },
+                    "_queue": AsyncQueue {
+                      "delayedOperations": Array [],
+                      "operationInProgress": false,
+                      "tail": Promise {},
+                    },
+                  },
+                },
+              },
+              "byId" => Object {
+                "fullName": "users.queries.byId",
+                "mapFn": [Function],
+                "mergeRoot": undefined,
+                "name": "byId",
+                "query": [Function],
+              },
+            },
+            "collection": CollectionReference {
+              "_query": Query {
+                "collectionGroup": null,
+                "endAt": null,
+                "explicitOrderBy": Array [],
+                "filters": Array [],
+                "limit": null,
+                "memoizedCanonicalId": null,
+                "memoizedOrderBy": null,
+                "path": ResourcePath {
+                  "len": 1,
+                  "offset": 0,
+                  "segments": Array [
+                    "users",
+                  ],
+                },
+                "startAt": null,
+              },
+              "firestore": Firestore {
+                "INTERNAL": Object {
+                  "delete": [Function],
+                },
+                "_config": FirestoreConfig {
+                  "credentials": FirebaseCredentialsProvider {
+                    "app": FirebaseAppImpl {
+                      "INTERNAL": Object {
+                        "addAuthTokenListener": [Function],
+                        "getToken": [Function],
+                        "getUid": [Function],
+                        "removeAuthTokenListener": [Function],
+                      },
+                      "_automaticDataCollectionEnabled": false,
+                      "firebase_": Object {
+                        "INTERNAL": Object {
+                          "ErrorFactory": [Function],
+                          "Promise": [Function],
+                          "createFirebaseNamespace": [Function],
+                          "createSubscribe": [Function],
+                          "deepExtend": [Function],
+                          "extendNamespace": [Function],
+                          "factories": Object {
+                            "auth": [Function],
+                            "database": [Function],
+                            "firestore": [Function],
+                          },
+                          "node": Object {
+                            "XMLHttpRequest": [Function],
+                            "localStorage": Storage {},
+                            "sessionStorage": Storage {},
+                          },
+                          "registerService": [Function],
+                          "removeApp": [Function],
+                          "useAsService": [Function],
+                        },
+                        "Promise": [Function],
+                        "SDK_VERSION": "5.9.4",
+                        "User": [Function],
+                        "__esModule": true,
+                        "app": [Function],
+                        "apps": Array [
+                          [Circular],
+                        ],
+                        "auth": [Function],
+                        "database": [Function],
+                        "default": [Circular],
+                        "firestore": [Function],
+                        "initializeApp": [Function],
+                      },
+                      "isDeleted_": false,
+                      "name_": "[DEFAULT]",
+                      "options_": Object {
+                        "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                        "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                        "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                        "messagingSenderId": "249308200308",
+                        "projectId": "learn-learn-b8e5a",
+                        "storageBucket": "",
+                      },
+                      "services_": Object {
+                        "auth": Object {
+                          "[DEFAULT]": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "appName": "[DEFAULT]",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "currentUser": null,
+                          },
+                        },
+                        "firestore": Object {
+                          "[DEFAULT]": [Circular],
+                        },
+                      },
+                    },
+                    "changeListener": [Function],
+                    "currentUser": User {
+                      "uid": null,
+                    },
+                    "forceRefresh": false,
+                    "tokenCounter": 1,
+                    "tokenListener": [Function],
+                  },
+                  "databaseId": DatabaseId {
+                    "database": "(default)",
+                    "projectId": "learn-learn-b8e5a",
+                  },
+                  "firebaseApp": FirebaseAppImpl {
+                    "INTERNAL": Object {
+                      "addAuthTokenListener": [Function],
+                      "getToken": [Function],
+                      "getUid": [Function],
+                      "removeAuthTokenListener": [Function],
+                    },
+                    "_automaticDataCollectionEnabled": false,
+                    "firebase_": Object {
+                      "INTERNAL": Object {
+                        "ErrorFactory": [Function],
+                        "Promise": [Function],
+                        "createFirebaseNamespace": [Function],
+                        "createSubscribe": [Function],
+                        "deepExtend": [Function],
+                        "extendNamespace": [Function],
+                        "factories": Object {
+                          "auth": [Function],
+                          "database": [Function],
+                          "firestore": [Function],
+                        },
+                        "node": Object {
+                          "XMLHttpRequest": [Function],
+                          "localStorage": Storage {},
+                          "sessionStorage": Storage {},
+                        },
+                        "registerService": [Function],
+                        "removeApp": [Function],
+                        "useAsService": [Function],
+                      },
+                      "Promise": [Function],
+                      "SDK_VERSION": "5.9.4",
+                      "User": [Function],
+                      "__esModule": true,
+                      "app": [Function],
+                      "apps": Array [
+                        [Circular],
+                      ],
+                      "auth": [Function],
+                      "database": [Function],
+                      "default": [Circular],
+                      "firestore": [Function],
+                      "initializeApp": [Function],
+                    },
+                    "isDeleted_": false,
+                    "name_": "[DEFAULT]",
+                    "options_": Object {
+                      "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                      "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                      "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                      "messagingSenderId": "249308200308",
+                      "projectId": "learn-learn-b8e5a",
+                      "storageBucket": "",
+                    },
+                    "services_": Object {
+                      "auth": Object {
+                        "[DEFAULT]": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "appName": "[DEFAULT]",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "currentUser": null,
+                        },
+                      },
+                      "firestore": Object {
+                        "[DEFAULT]": [Circular],
+                      },
+                    },
+                  },
+                  "persistenceKey": "[DEFAULT]",
+                  "settings": FirestoreSettings {
+                    "cacheSizeBytes": 41943040,
+                    "credentials": undefined,
+                    "host": "firestore.googleapis.com",
+                    "ssl": true,
+                    "timestampsInSnapshots": true,
+                  },
+                },
+                "_dataConverter": UserDataConverter {
+                  "preConverter": [Function],
+                },
+                "_databaseId": DatabaseId {
+                  "database": "(default)",
+                  "projectId": "learn-learn-b8e5a",
+                },
+                "_firestoreClient": FirestoreClient {
+                  "asyncQueue": AsyncQueue {
+                    "delayedOperations": Array [],
+                    "operationInProgress": false,
+                    "tail": Promise {},
+                  },
+                  "clientId": "6NNu6JX1egjWiDOHywTn",
+                  "credentials": FirebaseCredentialsProvider {
+                    "app": FirebaseAppImpl {
+                      "INTERNAL": Object {
+                        "addAuthTokenListener": [Function],
+                        "getToken": [Function],
+                        "getUid": [Function],
+                        "removeAuthTokenListener": [Function],
+                      },
+                      "_automaticDataCollectionEnabled": false,
+                      "firebase_": Object {
+                        "INTERNAL": Object {
+                          "ErrorFactory": [Function],
+                          "Promise": [Function],
+                          "createFirebaseNamespace": [Function],
+                          "createSubscribe": [Function],
+                          "deepExtend": [Function],
+                          "extendNamespace": [Function],
+                          "factories": Object {
+                            "auth": [Function],
+                            "database": [Function],
+                            "firestore": [Function],
+                          },
+                          "node": Object {
+                            "XMLHttpRequest": [Function],
+                            "localStorage": Storage {},
+                            "sessionStorage": Storage {},
+                          },
+                          "registerService": [Function],
+                          "removeApp": [Function],
+                          "useAsService": [Function],
+                        },
+                        "Promise": [Function],
+                        "SDK_VERSION": "5.9.4",
+                        "User": [Function],
+                        "__esModule": true,
+                        "app": [Function],
+                        "apps": Array [
+                          [Circular],
+                        ],
+                        "auth": [Function],
+                        "database": [Function],
+                        "default": [Circular],
+                        "firestore": [Function],
+                        "initializeApp": [Function],
+                      },
+                      "isDeleted_": false,
+                      "name_": "[DEFAULT]",
+                      "options_": Object {
+                        "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                        "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                        "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                        "messagingSenderId": "249308200308",
+                        "projectId": "learn-learn-b8e5a",
+                        "storageBucket": "",
+                      },
+                      "services_": Object {
+                        "auth": Object {
+                          "[DEFAULT]": Object {
+                            "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                            "appName": "[DEFAULT]",
+                            "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                            "currentUser": null,
+                          },
+                        },
+                        "firestore": Object {
+                          "[DEFAULT]": [Circular],
+                        },
+                      },
+                    },
+                    "changeListener": [Function],
+                    "currentUser": User {
+                      "uid": null,
+                    },
+                    "forceRefresh": false,
+                    "tokenCounter": 1,
+                    "tokenListener": [Function],
+                  },
+                  "databaseInfo": DatabaseInfo {
+                    "databaseId": DatabaseId {
+                      "database": "(default)",
+                      "projectId": "learn-learn-b8e5a",
+                    },
+                    "host": "firestore.googleapis.com",
+                    "persistenceKey": "[DEFAULT]",
+                    "ssl": true,
+                  },
+                  "persistence": MemoryPersistence {
+                    "_started": true,
+                    "clientId": "6NNu6JX1egjWiDOHywTn",
+                    "indexManager": MemoryIndexManager {
+                      "collectionParentIndex": MemoryCollectionParentIndex {
+                        "index": Object {},
+                      },
+                    },
+                    "listenSequence": ListenSequence {
+                      "previousValue": 0,
+                    },
+                    "mutationQueues": Object {},
+                    "queryCache": MemoryQueryCache {
+                      "highestSequenceNumber": 0,
+                      "highestTargetId": 0,
+                      "lastRemoteSnapshotVersion": SnapshotVersion {
+                        "timestamp": Timestamp {
+                          "nanoseconds": 0,
+                          "seconds": 0,
+                        },
+                      },
+                      "persistence": [Circular],
+                      "queries": ObjectMap {
+                        "inner": Object {},
+                        "mapKeyFn": [Function],
+                      },
+                      "references": ReferenceSet {
+                        "refsByKey": SortedSet {
+                          "comparator": [Function],
+                          "data": SortedMap {
+                            "comparator": [Function],
+                            "root": LLRBEmptyNode {
+                              "size": 0,
+                            },
+                          },
+                        },
+                        "refsByTarget": SortedSet {
+                          "comparator": [Function],
+                          "data": SortedMap {
+                            "comparator": [Function],
+                            "root": LLRBEmptyNode {
+                              "size": 0,
+                            },
+                          },
+                        },
+                      },
+                      "targetCount": 0,
+                      "targetIdGenerator": TargetIdGenerator {
+                        "generatorId": 0,
+                        "nextId": 2,
+                      },
+                    },
+                    "referenceDelegate": MemoryEagerDelegate {
+                      "persistence": [Circular],
+                    },
+                    "remoteDocumentCache": MemoryRemoteDocumentCache {
+                      "docs": SortedMap {
+                        "comparator": [Function],
+                        "root": LLRBEmptyNode {
+                          "size": 0,
+                        },
+                      },
+                      "indexManager": MemoryIndexManager {
+                        "collectionParentIndex": MemoryCollectionParentIndex {
+                          "index": Object {},
+                        },
+                      },
+                      "newDocumentChanges": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                      "size": 0,
+                      "sizer": [Function],
+                    },
+                  },
+                  "platform": NodePlatform {
+                    "base64Available": true,
+                    "document": null,
+                    "emptyByteString": Uint8Array [],
+                  },
+                  "sharedClientState": MemorySharedClientState {
+                    "localState": LocalClientState {
+                      "activeTargetIds": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                    },
+                    "onlineStateHandler": null,
+                    "queryState": Object {},
+                    "sequenceNumberHandler": null,
+                    "syncEngine": null,
+                  },
+                },
+                "_queue": AsyncQueue {
+                  "delayedOperations": Array [],
+                  "operationInProgress": false,
+                  "tail": Promise {},
+                },
+              },
+            },
+            "collectionName": "users",
+            "db": Firestore {
+              "INTERNAL": Object {
+                "delete": [Function],
+              },
+              "_config": FirestoreConfig {
+                "credentials": FirebaseCredentialsProvider {
+                  "app": FirebaseAppImpl {
+                    "INTERNAL": Object {
+                      "addAuthTokenListener": [Function],
+                      "getToken": [Function],
+                      "getUid": [Function],
+                      "removeAuthTokenListener": [Function],
+                    },
+                    "_automaticDataCollectionEnabled": false,
+                    "firebase_": Object {
+                      "INTERNAL": Object {
+                        "ErrorFactory": [Function],
+                        "Promise": [Function],
+                        "createFirebaseNamespace": [Function],
+                        "createSubscribe": [Function],
+                        "deepExtend": [Function],
+                        "extendNamespace": [Function],
+                        "factories": Object {
+                          "auth": [Function],
+                          "database": [Function],
+                          "firestore": [Function],
+                        },
+                        "node": Object {
+                          "XMLHttpRequest": [Function],
+                          "localStorage": Storage {},
+                          "sessionStorage": Storage {},
+                        },
+                        "registerService": [Function],
+                        "removeApp": [Function],
+                        "useAsService": [Function],
+                      },
+                      "Promise": [Function],
+                      "SDK_VERSION": "5.9.4",
+                      "User": [Function],
+                      "__esModule": true,
+                      "app": [Function],
+                      "apps": Array [
+                        [Circular],
+                      ],
+                      "auth": [Function],
+                      "database": [Function],
+                      "default": [Circular],
+                      "firestore": [Function],
+                      "initializeApp": [Function],
+                    },
+                    "isDeleted_": false,
+                    "name_": "[DEFAULT]",
+                    "options_": Object {
+                      "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                      "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                      "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                      "messagingSenderId": "249308200308",
+                      "projectId": "learn-learn-b8e5a",
+                      "storageBucket": "",
+                    },
+                    "services_": Object {
+                      "auth": Object {
+                        "[DEFAULT]": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "appName": "[DEFAULT]",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "currentUser": null,
+                        },
+                      },
+                      "firestore": Object {
+                        "[DEFAULT]": [Circular],
+                      },
+                    },
+                  },
+                  "changeListener": [Function],
+                  "currentUser": User {
+                    "uid": null,
+                  },
+                  "forceRefresh": false,
+                  "tokenCounter": 1,
+                  "tokenListener": [Function],
+                },
+                "databaseId": DatabaseId {
+                  "database": "(default)",
+                  "projectId": "learn-learn-b8e5a",
+                },
+                "firebaseApp": FirebaseAppImpl {
+                  "INTERNAL": Object {
+                    "addAuthTokenListener": [Function],
+                    "getToken": [Function],
+                    "getUid": [Function],
+                    "removeAuthTokenListener": [Function],
+                  },
+                  "_automaticDataCollectionEnabled": false,
+                  "firebase_": Object {
+                    "INTERNAL": Object {
+                      "ErrorFactory": [Function],
+                      "Promise": [Function],
+                      "createFirebaseNamespace": [Function],
+                      "createSubscribe": [Function],
+                      "deepExtend": [Function],
+                      "extendNamespace": [Function],
+                      "factories": Object {
+                        "auth": [Function],
+                        "database": [Function],
+                        "firestore": [Function],
+                      },
+                      "node": Object {
+                        "XMLHttpRequest": [Function],
+                        "localStorage": Storage {},
+                        "sessionStorage": Storage {},
+                      },
+                      "registerService": [Function],
+                      "removeApp": [Function],
+                      "useAsService": [Function],
+                    },
+                    "Promise": [Function],
+                    "SDK_VERSION": "5.9.4",
+                    "User": [Function],
+                    "__esModule": true,
+                    "app": [Function],
+                    "apps": Array [
+                      [Circular],
+                    ],
+                    "auth": [Function],
+                    "database": [Function],
+                    "default": [Circular],
+                    "firestore": [Function],
+                    "initializeApp": [Function],
+                  },
+                  "isDeleted_": false,
+                  "name_": "[DEFAULT]",
+                  "options_": Object {
+                    "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                    "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                    "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                    "messagingSenderId": "249308200308",
+                    "projectId": "learn-learn-b8e5a",
+                    "storageBucket": "",
+                  },
+                  "services_": Object {
+                    "auth": Object {
+                      "[DEFAULT]": Object {
+                        "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                        "appName": "[DEFAULT]",
+                        "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                        "currentUser": null,
+                      },
+                    },
+                    "firestore": Object {
+                      "[DEFAULT]": [Circular],
+                    },
+                  },
+                },
+                "persistenceKey": "[DEFAULT]",
+                "settings": FirestoreSettings {
+                  "cacheSizeBytes": 41943040,
+                  "credentials": undefined,
+                  "host": "firestore.googleapis.com",
+                  "ssl": true,
+                  "timestampsInSnapshots": true,
+                },
+              },
+              "_dataConverter": UserDataConverter {
+                "preConverter": [Function],
+              },
+              "_databaseId": DatabaseId {
+                "database": "(default)",
+                "projectId": "learn-learn-b8e5a",
+              },
+              "_firestoreClient": FirestoreClient {
+                "asyncQueue": AsyncQueue {
+                  "delayedOperations": Array [],
+                  "operationInProgress": false,
+                  "tail": Promise {},
+                },
+                "clientId": "6NNu6JX1egjWiDOHywTn",
+                "credentials": FirebaseCredentialsProvider {
+                  "app": FirebaseAppImpl {
+                    "INTERNAL": Object {
+                      "addAuthTokenListener": [Function],
+                      "getToken": [Function],
+                      "getUid": [Function],
+                      "removeAuthTokenListener": [Function],
+                    },
+                    "_automaticDataCollectionEnabled": false,
+                    "firebase_": Object {
+                      "INTERNAL": Object {
+                        "ErrorFactory": [Function],
+                        "Promise": [Function],
+                        "createFirebaseNamespace": [Function],
+                        "createSubscribe": [Function],
+                        "deepExtend": [Function],
+                        "extendNamespace": [Function],
+                        "factories": Object {
+                          "auth": [Function],
+                          "database": [Function],
+                          "firestore": [Function],
+                        },
+                        "node": Object {
+                          "XMLHttpRequest": [Function],
+                          "localStorage": Storage {},
+                          "sessionStorage": Storage {},
+                        },
+                        "registerService": [Function],
+                        "removeApp": [Function],
+                        "useAsService": [Function],
+                      },
+                      "Promise": [Function],
+                      "SDK_VERSION": "5.9.4",
+                      "User": [Function],
+                      "__esModule": true,
+                      "app": [Function],
+                      "apps": Array [
+                        [Circular],
+                      ],
+                      "auth": [Function],
+                      "database": [Function],
+                      "default": [Circular],
+                      "firestore": [Function],
+                      "initializeApp": [Function],
+                    },
+                    "isDeleted_": false,
+                    "name_": "[DEFAULT]",
+                    "options_": Object {
+                      "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                      "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                      "databaseURL": "https://learn-learn-b8e5a.firebaseio.com",
+                      "messagingSenderId": "249308200308",
+                      "projectId": "learn-learn-b8e5a",
+                      "storageBucket": "",
+                    },
+                    "services_": Object {
+                      "auth": Object {
+                        "[DEFAULT]": Object {
+                          "apiKey": "AIzaSyC-d0HDLJ8Gd9UZ175z7dg6J98ZrOIK0Mc",
+                          "appName": "[DEFAULT]",
+                          "authDomain": "learn-learn-b8e5a.firebaseapp.com",
+                          "currentUser": null,
+                        },
+                      },
+                      "firestore": Object {
+                        "[DEFAULT]": [Circular],
+                      },
+                    },
+                  },
+                  "changeListener": [Function],
+                  "currentUser": User {
+                    "uid": null,
+                  },
+                  "forceRefresh": false,
+                  "tokenCounter": 1,
+                  "tokenListener": [Function],
+                },
+                "databaseInfo": DatabaseInfo {
+                  "databaseId": DatabaseId {
+                    "database": "(default)",
+                    "projectId": "learn-learn-b8e5a",
+                  },
+                  "host": "firestore.googleapis.com",
+                  "persistenceKey": "[DEFAULT]",
+                  "ssl": true,
+                },
+                "persistence": MemoryPersistence {
+                  "_started": true,
+                  "clientId": "6NNu6JX1egjWiDOHywTn",
+                  "indexManager": MemoryIndexManager {
+                    "collectionParentIndex": MemoryCollectionParentIndex {
+                      "index": Object {},
+                    },
+                  },
+                  "listenSequence": ListenSequence {
+                    "previousValue": 0,
+                  },
+                  "mutationQueues": Object {},
+                  "queryCache": MemoryQueryCache {
+                    "highestSequenceNumber": 0,
+                    "highestTargetId": 0,
+                    "lastRemoteSnapshotVersion": SnapshotVersion {
+                      "timestamp": Timestamp {
+                        "nanoseconds": 0,
+                        "seconds": 0,
+                      },
+                    },
+                    "persistence": [Circular],
+                    "queries": ObjectMap {
+                      "inner": Object {},
+                      "mapKeyFn": [Function],
+                    },
+                    "references": ReferenceSet {
+                      "refsByKey": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                      "refsByTarget": SortedSet {
+                        "comparator": [Function],
+                        "data": SortedMap {
+                          "comparator": [Function],
+                          "root": LLRBEmptyNode {
+                            "size": 0,
+                          },
+                        },
+                      },
+                    },
+                    "targetCount": 0,
+                    "targetIdGenerator": TargetIdGenerator {
+                      "generatorId": 0,
+                      "nextId": 2,
+                    },
+                  },
+                  "referenceDelegate": MemoryEagerDelegate {
+                    "persistence": [Circular],
+                  },
+                  "remoteDocumentCache": MemoryRemoteDocumentCache {
+                    "docs": SortedMap {
+                      "comparator": [Function],
+                      "root": LLRBEmptyNode {
+                        "size": 0,
+                      },
+                    },
+                    "indexManager": MemoryIndexManager {
+                      "collectionParentIndex": MemoryCollectionParentIndex {
+                        "index": Object {},
+                      },
+                    },
+                    "newDocumentChanges": SortedSet {
+                      "comparator": [Function],
+                      "data": SortedMap {
+                        "comparator": [Function],
+                        "root": LLRBEmptyNode {
+                          "size": 0,
+                        },
+                      },
+                    },
+                    "size": 0,
+                    "sizer": [Function],
+                  },
+                },
+                "platform": NodePlatform {
+                  "base64Available": true,
+                  "document": null,
+                  "emptyByteString": Uint8Array [],
+                },
+                "sharedClientState": MemorySharedClientState {
+                  "localState": LocalClientState {
+                    "activeTargetIds": SortedSet {
+                      "comparator": [Function],
+                      "data": SortedMap {
+                        "comparator": [Function],
+                        "root": LLRBEmptyNode {
+                          "size": 0,
+                        },
+                      },
+                    },
+                  },
+                  "onlineStateHandler": null,
+                  "queryState": Object {},
+                  "sequenceNumberHandler": null,
+                  "syncEngine": null,
+                },
+              },
+              "_queue": AsyncQueue {
+                "delayedOperations": Array [],
+                "operationInProgress": false,
+                "tail": Promise {},
+              },
+            },
+            "deps": Object {},
+            "doc": [Function],
+            "getUser": [Function],
+            "registerQueries": [Function],
+            "registerValues": [Function],
+            "setRole": [Function],
+            "snapToById": [Function],
+            "state": Object {
+              "_queryStates": Object {
+                "byId": Object {
+                  "cache": Object {},
+                  "loadStatus": Object {},
+                },
+              },
+              "_state": true,
+              "all": undefined,
+              "byId": [Function],
+              "getUser": [Function],
+              "setRole": [Function],
+            },
+            "toString": [Function],
+          },
+        }
+      }
+    >
+      <ContainersProvider>
+        <Subscribe
+          to={
+            Array [
+              [Function],
+              [Function],
+            ]
+          }
+        >
+          <Consumer>
+            <CohortsComp
+              test_cohorts={
+                Object {
+                  "_queryStates": Object {
+                    "byId": Object {
+                      "cache": Object {},
+                      "loadStatus": Object {},
+                    },
+                    "cohortIdsOfUser": Object {
+                      "cache": Object {},
+                      "loadStatus": Object {},
+                    },
+                    "cohortUserEntries": Object {
+                      "cache": Object {},
+                      "loadStatus": Object {},
+                    },
+                    "cohortUserEntry": Object {
+                      "cache": Object {},
+                      "loadStatus": Object {},
+                    },
+                    "getCohort": Object {
+                      "cache": Object {},
+                      "loadStatus": Object {},
+                    },
+                  },
+                  "_state": true,
+                  "addUserToCohort": [Function],
+                  "all": undefined,
+                  "allCohortsArray": undefined,
+                  "byId": [Function],
+                  "ceateCohort": [Function],
+                  "cohortIdsOfUser": [Function],
+                  "cohortUserEntries": [Function],
+                  "cohortUserEntry": [Function],
+                  "getCohort": [Function],
+                  "getCohortIdsOfUser": [Function],
+                  "getCohortName": [Function],
+                  "getCohortUserEntry": [Function],
+                  "getUidsOfCohort": [Function],
+                  "getUsersOfCohort": [Function],
+                  "removeUserFromCohort": [Function],
+                }
+              }
+            >
+              false
+            </CohortsComp>
+          </Consumer>
+        </Subscribe>
+      </ContainersProvider>
+    </Provider>
+  </Consumer>
+</Provider>
+`;

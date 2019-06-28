@@ -1,5 +1,10 @@
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -7,7 +12,157 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  overflow-y: scroll;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a[role="button"]:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.size-inherit {
+  width: inherit;
+  height: inherit; 
+}
+.size-1 {
+  width: 1em;
+}
+.size-15 {
+  width: 1.5em;
+}
+.size-2 {
+  width: 2em;
+}
+
+
+.full-height {
+  height: 100%;
+}
+.full-width {
+  width: 100%;
+}
+
+.view-centered {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.full-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+  
+.font-size-05 {
+  font-size: 0.5em;
+}
+  
+.font-size-2 {
+  font-size: 2em;
+}
+  
+.font-size-5 {
+  font-size: 5em !important;
+}
+
+
+/* see: https://stackoverflow.com/a/27732769 */
+.divider-vertical {
+  height: 20px;                   /* any height */
+  color: white;
+  border-left: 1px solid gray;     /* right or left is the same */
+  opacity: inherit;                    /* optional */
+  margin-right: 15px;                  /* optional */
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+
+.color-red {
+  color: red;
+}
+
+.bg-lightgray {
+  background-color: lightgray;
+}
+
+.code {
+  background-color: #EAEAEA !important;
+  /*border: 1px black solid;*/
+}
+
+/**
+ * animated-underline
+ * @see: http://jsfiddle.net/y4wuurt9/
+ */
+
+.animated-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.animated-underline:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: white;
+  -webkit-transition: width 250ms ease-in-out;
+  -moz-transition: width 250ms ease-in-out;
+  -o-transition: width 250ms ease-in-out;
+  transition: width 250ms ease-in-out;
+}
+
+.animated-underline.active:after {
+  width: 100%;   
+}
+
+
+/**
+ * Some Bootstrap overrides
+ */
+
+ /* Boostrap buttons have too much padding */
+.btn {
+  padding: .3rem .475rem !important;
+}
+
+.gray {
+  color: gray;
+}
+.lightgray {
+  color: lightgray;
+}
+.bg-lightyellow {
+  background-color: lightyellow
+}
+
+.space-1 {
+  width: 1rem;
+  height: 1rem;
+}
+.space-2 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.inline-block {
+  display: inline-block;
 }

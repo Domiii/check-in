@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+      "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules/@types/node/util.d.ts"
+  ]
+}

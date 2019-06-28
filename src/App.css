@@ -31,3 +31,26 @@
     transform: rotate(360deg);
   }
 }
+
+*[type="button"],*[role="button"] span {
+  /* Fix MUI broken default settings: Button text is always in all caps */
+  text-transform: none !important;
+}
+
+/* see: https://stackoverflow.com/a/24979148 */
+.app-cont {
+  display: flex;
+  flex-flow: column;
+  min-height: 100%;
+}
+
+.app-nav {
+  display: flex;
+  flex: 0 1 auto;
+}
+
+.app-main {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+}

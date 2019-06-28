@@ -1,0 +1,56 @@
+{
+	"import_Reactstrap_components": {
+		"prefix": "irt.reactstrap",
+		"description": "import_Reactstrap_components",
+		"body": [
+			"import { $1 } from 'reactstrap';$0"
+		]
+	},
+	"import_fortawesome_icon": {
+		"prefix": "irt.icon",
+		"description": "import_fortawesome_icons",
+		"body": [
+			"import { $1 } from '@fortawesome/free-solid-svg-icons';",
+			"import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';$0"
+		]
+	},
+	"firestore_container": {
+		"prefix": "fscont",
+		"description": "create new FirestoreContainer class",
+		"body": [
+			"import FirestoreContainer from \"unstated-ext/FirestoreContainer\";",
+			"",
+			"class $1 extends FirestoreContainer {",
+			"  static n = '${1/(.*)/${1:/downcase}/g}';",
+			"  get refs() {",
+			"    return {",
+			"      $0",
+			"    };",
+			"  }",
+			"",
+			"  get values() {",
+			"    return {",
+			"      all: { ref: this.collection }",
+			"    };",
+			"  }",
+			"",
+			"  get queries() {",
+			"    return {",
+			"      ",
+			"    };",
+			"  }",
+			"",
+			"  get selectors() {",
+			"    return {",
+			"    };",
+			"  }",
+			"",
+			"  get actions() {",
+			"    return {",
+			"    };",
+			"  }",
+			"}",
+			"export default $1;"
+		]
+	}
+}
