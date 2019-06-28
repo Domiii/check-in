@@ -8,11 +8,12 @@
 1. `cd check-in`
 1. Allow for `create-react-app` customizations through [`rescripts`](https://github.com/harrysolovay/rescripts)
     1. `npm i npm i -D @rescripts/cli @rescripts/rescript-env` 
-    1. Fix up `.babelrc` to support experimental decorators and more
-        1. `npm i --save-dev @babel/core @babel/node @babel/cli`
-        1. `npm i -s core-js@3`
-        1. `npm i --save-dev @babel/plugin-proposal-decorators @babel/plugin-proposal-class-properties @babel/plugin-proposal-function-bind @babel/plugin-syntax-export-default-from`
-        1. add custom `.babelrc`
+    1. Fix up `babel.config.js` to support experimental decorators and more (WARNING: `.babelrc` was buggy and did not work costing me hours of debugging time; not recommending it and official babel documentation was also not recommending it)
+        1. `npm i -S core-js@3`
+        1. `npm i -D @babel/core @babel/node @babel/cli`
+        1. `npm i -D @babel/plugin-proposal-decorators @babel/plugin-proposal-class-properties @babel/plugin-proposal-function-bind @babel/plugin-syntax-export-default-from`
+        1. add custom `babel.config.js`
+1. `npm i -D link-module-alias` for aliasing of local folders [[link](https://github.com/Rush/link-module-alias)]
 1. Firestore
     1. Create Firebase Project + Web App + Firestore database
     1. Add firestore config
@@ -25,27 +26,26 @@
 1. unstated
     1. `npm i -S unstated` 
     1. Add Domi's own `unstated-ext` scripts
-        * `npm link ./src/unstated-ext/` 
+        * `npm link ./src/unstated-ext/`
 1. react-router
-    1. `npm i -S react-router` 
-    1. 
-1. add module path [link](https://www.npmjs.com/package/app-module-path)
-    1. `npm i -S app-module-path` 
-    1. NOTE: when setting up Jest et al, need to also add corresponding alias.
+    1. `npm i -S react-router-dom` 
 1. Make things prettier
     1. Add Bootstrap + reactstrap
         1. See: https: //reactstrap.github.io/
             1. `npm i -S bootstrap reactstrap` 
-    1. Add [flexbox-react](https://www.npmjs.com/package/flexbox-react) for simple, practical layouting
-    1. Add [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+    1. [`npm i -S flexbox-react`](https://www.npmjs.com/package/flexbox-react) # for simple, practical layouting
+    1. [`npm i -S react-fontawesome`](https://github.com/FortAwesome/react-fontawesome)
+        * `npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons`
+        * https: //fontawesome.com/how-to-use/on-the-web/using-with/react
 
-        * `npm i -s @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons` *
-        https: //fontawesome.com/how-to-use/on-the-web/using-with/react
+    1. Add [material-ui](https://material-ui.com/) - `npm i -S @material-ui/core`
+1. Good stuff
+    1. `npm i -S moment react-moment`
+    1. `npm i -S react-bootstrap-table-next`
+1. Better testing
+    1. `jest-extended`
 
-    1. Add [material-ui](https://material-ui.com/) - `npm i -s @material-ui/core` 
-
-
-# Dev Log: App Structure?
+# TODO - Dev Log: document App Structure
 1. Navbar: `src/components/Navigation.js` 
 1. Routes: `src/components/AppRoutes.js` 
 

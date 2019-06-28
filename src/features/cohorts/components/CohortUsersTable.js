@@ -12,7 +12,7 @@ import { Button } from 'reactstrap';
 
 import renderLoadingIfNotLoaded from '../../../components/renderLoadingIfNotLoaded';
 import UserLabel from '../../users/components/UserLabel';
-import CurrentUser from '../../../api/state/CurrentUser';
+import CurrentUser from '../../../api/CurrentUser';
 
 @connect(Cohorts)
 class LeaveCohortButton extends Component {

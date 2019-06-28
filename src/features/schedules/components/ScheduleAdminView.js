@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ScheduleTimeTable from './ScheduleTimeTable';
 
 import connect from 'connect';
-import Schedules from './api/Schedules';
+import Schedules from '../api/Schedules';
 import renderLoadingIfNotLoaded from '../../../components/renderLoadingIfNotLoaded';
 
 @connect(Schedules)

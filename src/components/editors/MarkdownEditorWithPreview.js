@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
 
 import connect from 'connect';
-import NotLoaded from 'NotLoaded';
+import NotLoaded from 'unstated-ext/NotLoaded';
 import MarkdownTempStorage from 'state/MarkdownTempStorage';
 
 import MarkdownEditor from './MarkdownEditor';

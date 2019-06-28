@@ -1,9 +1,9 @@
 import Firebase from 'firebase/app';
 import FirestoreContainer from "unstated-ext/FirestoreContainer";
-import NotLoaded from 'NotLoaded';
+import NotLoaded from 'unstated-ext/NotLoaded';
 
 import Users from 'features/users/api/Users';
-import CurrentUser from 'api/state/CurrentUser';
+import CurrentUser from 'api/CurrentUser';
 import sleep from '../../../util/sleep';
 
 const MergeTrue = Object.freeze({ merge: true });

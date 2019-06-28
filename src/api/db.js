@@ -1,4 +1,4 @@
-import * as firebase from 'firebase/app';
+import * as Firebase from 'firebase/app';
 
 import 'firebase/auth';
 import 'firebase/database';
@@ -18,9 +18,9 @@ const config = {
 
 
 
-export const app = firebase.initializeApp(config);
+export const firebase = Firebase.initializeApp(config);
 
-const db = app.firestore();
+const db = Firebase.firestore();
 export default db;
 
 // for dev + debugging purposes
@@ -33,5 +33,5 @@ var getGlobal = function () {
   throw new Error('unable to locate global object');
 };
 
-getGlobal().firebase = app;
+getGlobal().firebase = firebase;
 getGlobal().db = db;

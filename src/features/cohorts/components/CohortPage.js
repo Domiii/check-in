@@ -4,7 +4,7 @@ import CohortPanel from './CohortPanel';
 import CohortsPanel from './CohortsPanel';
 import CohortTable from './CohortTable';
 import connect from 'connect';
-import CurrentUser from 'api/state/CurrentUser';
+import CurrentUser from 'api/CurrentUser';
 
 //@connect(CurrentUser)
 class CohortPage extends Component {

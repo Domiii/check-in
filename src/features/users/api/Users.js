@@ -1,5 +1,5 @@
 import zipObject from 'lodash/zipObject';
-import NotLoaded from 'NotLoaded';
+import NotLoaded from 'unstated-ext/NotLoaded';
 
 import FirestoreContainer from 'unstated-ext/FirestoreContainer';
 

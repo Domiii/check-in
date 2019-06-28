@@ -1,9 +1,7 @@
 import Firebase from 'firebase/app';
-import { db } from 'api/firebase';
-import RoleId, { hasRole } from 'api/roles';
-import auth, { onAuthStateChanged } from '../auth';
-
-import isEqual from 'lodash/isEqual';
+import db from './db';
+import RoleId, { hasRole } from './roles';
+import auth, { onAuthStateChanged } from './auth';
 
 import ContainerEx from 'unstated-ext/ContainerEx';
 

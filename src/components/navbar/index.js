@@ -18,7 +18,7 @@ import { Button, Badge } from 'reactstrap';
 
 
 import connect from 'connect';
-import CurrentUser from 'state/CurrentUser';
+import CurrentUser from 'api/CurrentUser';
 import { logout } from 'api/auth';
 
 import RoleId, { hasRole } from 'api/roles';

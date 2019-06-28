@@ -1,5 +1,5 @@
 import makeProxy from './SerializeAccessProxy';
-import { db } from 'api/firebase';
+import { db } from 'api/db';
 
 it('does collections + documents', () => {
   const p = makeProxy(db);

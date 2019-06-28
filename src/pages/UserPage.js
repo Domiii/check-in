@@ -13,7 +13,7 @@ import { Button, ButtonGroup } from 'reactstrap';
 import Loading from 'components/Loading';
 
 import connect from 'connect';
-import CurrentUser from 'state/CurrentUser';
+import CurrentUser from 'api/CurrentUser';
 import Users from 'features/users/api/Users';
 
 import { getRoleName, hasRole, RoleId } from 'api/roles';

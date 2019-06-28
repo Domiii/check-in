@@ -2,10 +2,8 @@ import zipObject from 'lodash/zipObject';
 import mapValues from 'lodash/mapValues';
 
 import Firebase from 'firebase/app';
-import {
-  db
-} from 'api/firebase';
-import NotLoaded from 'NotLoaded';
+import db from 'api/db';
+import NotLoaded from 'unstated-ext/NotLoaded';
 
 import ContainerEx from './ContainerEx';
 import isObject from 'lodash/isObject';

@@ -1,4 +1,4 @@
-import firebase from './firebase';
+import { firebase } from './db';
 import Firebase from 'firebase/app';
 
 export async function onAuthStateChanged(fn) {

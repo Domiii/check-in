@@ -15,6 +15,9 @@ class CohortJoinButton extends Component {
     this.setState({ busy: true });
     const code = window.prompt('Please enter a Cohort code');
     if (!code) {
+      this.setState({
+        busy: false,
+      });
       return;
     }
     const result = await cohorts.joinCohort(code);

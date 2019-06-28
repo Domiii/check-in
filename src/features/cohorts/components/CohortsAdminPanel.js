@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import CohortTable from './CohortTable';
 import connect from 'connect';
-import CurrentUser from 'api/state/CurrentUser';
+import CurrentUser from 'api/CurrentUser';
 import Cohorts from '../api/Cohorts';
 
 const cardStyle = {

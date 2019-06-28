@@ -4,7 +4,7 @@ import { Provider } from 'unstated';
 
 import Cohorts from './Cohorts';
 import connect from 'connect';
-import NotLoaded from 'NotLoaded';
+import NotLoaded from 'unstated-ext/NotLoaded';
 
 import { mount } from 'enzyme';
 

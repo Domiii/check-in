@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import connect from 'connect';
-import CurrentUser from '../api/state/CurrentUser';
+import CurrentUser from '../api/CurrentUser';
 import NoCohortNotification from '../features/cohorts/components/NoCohortNotification';
 import renderLoadingIfNotLoaded from '../components/renderLoadingIfNotLoaded';
 import Loading from '../components/Loading';

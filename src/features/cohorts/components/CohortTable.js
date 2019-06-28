@@ -13,7 +13,7 @@ import Moment from 'react-moment';
 import { Button, Badge } from 'reactstrap';
 
 import renderLoadingIfNotLoaded from '../../../components/renderLoadingIfNotLoaded';
-import CurrentUser from '../../../api/state/CurrentUser';
+import CurrentUser from '../../../api/CurrentUser';
 
 
 @connect(Cohorts)

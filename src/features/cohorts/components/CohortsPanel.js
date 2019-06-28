@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import CohortsAdminPanel from './CohortsAdminPanel';
 import CohortTable from './CohortTable';
 import connect from 'connect';
-import CurrentUser from 'api/state/CurrentUser';
+import CurrentUser from 'api/CurrentUser';
 import CohortJoinButton from './CohortJoinButton';
 
 @connect(CurrentUser)
