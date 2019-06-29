@@ -48,6 +48,10 @@ export default class CurrentUser extends ContainerEx {
     
     hasRole: (role) => {
       return hasRole(this.state, role);
+    },
+
+    isAdmin: () => {
+      return this.state.hasRole(RoleId.Admin);
     }
   };
 
@@ -59,9 +63,9 @@ export default class CurrentUser extends ContainerEx {
         if (needsUpdate(snap, priv, selectPrivate)) {
           // update private user data
           const obj = priv;
-          obj.updatedAt = Firebase.firestore.FieldValue.serverTimestamp();
+          obj.updatedAt = Firebase.firestore.Timestamp.fromDate(new Date());
           if (!snap.exists) {
-            obj.createdAt = Firebase.firestore.FieldValue.serverTimestamp();
+            obj.createdAt = Firebase.firestore.Timestamp.fromDate(new Date());
           }
           db.collection('usersPrivate').doc(user.uid).set(obj, {merge: true});
         }
@@ -77,16 +81,16 @@ export default class CurrentUser extends ContainerEx {
           // update public user data
           //debugger;
           const obj = pub;
-          obj.updatedAt = Firebase.firestore.FieldValue.serverTimestamp();
+          obj.updatedAt = Firebase.firestore.Timestamp.fromDate(new Date());
           if (!snap.exists) {
-            obj.createdAt = Firebase.firestore.FieldValue.serverTimestamp();
+            obj.createdAt = Firebase.firestore.Timestamp.fromDate(new Date());
           }
           db.collection('users').doc(user.uid).set(obj, {merge: true});
         }
         if (!snapData.displayRole) {
           snapData.displayRole = RoleId.Guest;
         }
-        console.log('publicLoaded');
+        //console.log('publicLoaded');
         this.setState({ publicLoaded: true });
         this.setState(snapData);
       });
@@ -97,7 +101,7 @@ export default class CurrentUser extends ContainerEx {
     super();
 
     this.state.isLoaded = () => {
-      console.log('get isLoaded');
+      //console.log('get isLoaded');
       return this.state.privateLoaded && this.state.publicLoaded;
     };
 

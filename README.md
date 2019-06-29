@@ -1,5 +1,10 @@
 # TODO
-
+* Only check in once every day / 8 hours apart
+* Admin can help people check in
+* fix cohort link in Navbar (no more "current cohortId" concept)
+* Money + Payment tracking
+* A little prettier
+* more playful
 
 
 # Dev Log: How did I set things up?

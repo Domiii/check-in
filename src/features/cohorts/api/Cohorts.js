@@ -95,12 +95,17 @@ class Cohorts extends FirestoreContainer {
 
         return snap.exists && Object.keys(snap.data()) || EmptyArray;
       },
+      getAllCohortEntriesOfUser(cohortIds, uid) {
+        const entries = cohortIds.map(cohortId => this.getCohortUserEntry(cohortId, uid));
+        if (!entries.reduce((acc, next) => !!acc && !!next, true)) {
+          // make sure to only return all once all have loaded and not return partial results
+          return NotLoaded;
+        }
+        return entries.map((entry, i) => ({...entry, cohortId: cohortIds[i]}));
+      },
       getCohortUserEntry(cohortId, uid) {
         const snap = this.cohortUserEntries(cohortId);
         if (snap === NotLoaded) { return NotLoaded; }
-
-        console.warn(snap, snap.data(), uid, snap.exists && snap.data()[uid] || null);
-
         return snap.exists && snap.data()[uid] || null;
       },
       getMyCohortIds() {
