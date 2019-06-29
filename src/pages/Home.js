@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import connect from 'connect';
 import CurrentUser from '../api/CurrentUser';
-import NoCohortNotification from '../features/cohorts/components/NoCohortNotification';
+import MyCohortsOverview from '../features/cohorts/components/MyCohortsOverview';
 import renderLoadingIfNotLoaded from '../components/renderLoadingIfNotLoaded';
 import Loading from '../components/Loading';
 
@@ -11,17 +11,13 @@ class Home extends Component {
   state = {}
   render() {
     const { currentUser } = this.props;
-    const { cohortId, isLoaded } = currentUser;
+    const { isLoaded } = currentUser;
 
     if (!isLoaded()) { return <Loading centered={true} />; }
 
-    const cohortEl = cohortId ?
-      'hi' :
-      (<NoCohortNotification />);
-
     return <div className="full-width">
       <div className="space-2" />
-      {cohortEl}
+      <MyCohortsOverview />
     </div>
   }
 }

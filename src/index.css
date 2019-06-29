@@ -162,6 +162,12 @@ a[role="button"]:hover {
   width: 2rem;
   height: 2rem;
 }
+.width-1 {
+  width: 1rem;
+}
+.width-2 {
+  width: 2rem;
+}
 
 .inline-block {
   display: inline-block;
