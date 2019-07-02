@@ -5,7 +5,8 @@ import isObject from 'lodash/isObject';
 export const RoleId = {
   Guest: 0,
   User: 1,
-  Admin: 2
+  Admin: 2,
+  Dev: 3
 };
 
 export const RoleIds = Object.values(RoleId);
@@ -15,7 +16,7 @@ export const RoleNameById = zipObject(RoleIds, RoleNames);
 
 export function getRoleName(roleId) {
   roleId = Math.min(roleId, Math.max(...RoleIds));
-  return RoleNameById[roleId] || RoleNameById[RoleId.Guest];
+  return RoleNameById[roleId || RoleId.Guest];
 }
 
 export function hasRole(userOrRole, referenceRoleOrName) {

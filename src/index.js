@@ -7,9 +7,7 @@ import ReactDOM from 'react-dom';
 
 import * as serviceWorker from './serviceWorker';
 
-import App from './App';
 import Loading from 'components/Loading';
-
 
 import { onAuthStateChanged } from 'api/auth';
 
@@ -20,9 +18,10 @@ let rendered = false;
 
 onAuthStateChanged(user => {
   //console.log('onAuthStateChanged', user);
-  setTimeout(() => {
+  setTimeout(async () => {
     if (!rendered) {
       rendered = true;
+      const App = (await import('./App')).default;
       ReactDOM.render(<App />, document.getElementById('root'));
     }
   });

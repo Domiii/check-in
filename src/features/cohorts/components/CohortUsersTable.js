@@ -3,26 +3,30 @@ import React, { Component } from 'react';
 import connect from 'connect';
 
 import Cohorts from 'features/cohorts/api/Cohorts';
+import CohortCheckIns from 'features/cohorts/api/CohortCheckIns';
 import Users from 'features/users/api/Users';
 
 import BootstrapTable from 'react-bootstrap-table-next';
 import Moment from 'react-moment';
-import Flexbox from 'flexbox-react';
+import Flex from 'flexbox-react';
 import { Button } from 'reactstrap';
+
+import { getQueryString } from 'src/util/urlUtil';
 
 import renderLoadingIfNotLoaded from '../../../components/renderLoadingIfNotLoaded';
 import UserLabel from '../../users/components/UserLabel';
 import CurrentUser from '../../../api/CurrentUser';
+import CohortCheckInStatus from './CohortCheckInStatus';
 
 @connect(Cohorts)
 class LeaveCohortButton extends Component {
   state = {};
 
   onClick = async () => {
-    const { cohorts, cohortId, uid } = this.props;
+    const { uid, cohortId, cohorts } = this.props;
     if (window.confirm('Are you sure, you want to kick this user? (cannot UNDO)')) {
       this.setState({busy: true});
-      const result = await cohorts.removeUserFromCohort(cohortId, uid);
+      const result = await cohorts.removeUserFromCohort(uid, cohortId);
       //this.setState({ busy: false });
       if (!result || result.error) {
         console.error(result);
@@ -56,16 +60,18 @@ const columns = [
     text: 'User',
     sort: true,
     classes: columnClasses,
-    formatter: (cell, { cohortId, uid, admin, selected }) => (
-      <Flexbox className="full-width" flexDirection="row" justifyContent="space-between">
-        <Flexbox>
+    formatter: (cell, { uid, cohortId, admin, selected }) => (
+      <Flex className="full-width" flexDirection="row" justifyContent="space-between">
+        <Flex>
           <UserLabel uid={uid} />
-        </Flexbox>
+        </Flex>
 
-        {admin && <Flexbox>
-          <LeaveCohortButton cohortId={cohortId} uid={uid} />
-        </Flexbox>}
-      </Flexbox>
+        {admin && <Flex justifyContent="flex-end">
+          <Flex>
+            <LeaveCohortButton uid={uid} cohortId={cohortId} />
+          </Flex>
+        </Flex>}
+      </Flex>
     )
   },
   {
@@ -73,13 +79,22 @@ const columns = [
     text: 'Joined',
     sort: true,
     classes: columnClasses,
-    formatter: (cell, row, rowIndex) => {
+    formatter: (cell, row) => {
       const date = cell && cell.toDate();
       return (<>
         <Moment fromNow>{date}</Moment> <span className="gray">(
           <Moment format="lll">{date}</Moment>
           )</span>
       </>);
+    }
+  },
+  {
+    dataField: 'lastCheckIn',
+    text: 'Last CheckIn',
+    sort: true,
+    classes: columnClasses,
+    formatter: (cell, {uid, cohortId, admin}) => {
+      return (<CohortCheckInStatus canWrite={admin} uid={uid} cohortId={cohortId} />);
     }
   }
 ];
@@ -89,10 +104,10 @@ const defaultSorted = [{
   order: 'desc'
 }];
 
-@connect(Cohorts, Users, CurrentUser)
+@connect(Cohorts, CohortCheckIns, Users, CurrentUser)
 class CohortUsersTable extends Component {
   render() {
-    const { cohorts, users, currentUser, cohortId } = this.props;
+    const { cohorts, cohortCheckIns, users, currentUser, cohortId } = this.props;
 
     // load cohort user entries
     const entries = cohorts.getUserEntriesOfCohort(cohortId);
@@ -102,12 +117,13 @@ class CohortUsersTable extends Component {
     // load users
     const uids = Object.keys(entries);
     let rows = users.getUsersOfIds(uids);
+    const lastCheckIns = cohortCheckIns.getAllLastCheckIns(uids, cohortId);
 
-    loading = renderLoadingIfNotLoaded(rows, { centered: true });
+    loading = renderLoadingIfNotLoaded(rows && lastCheckIns, { centered: true });
     if (loading) return loading;
 
     rows = rows.map(
-      user => {
+      (user, i) => {
         const {
           uid,
           displayName,
@@ -115,11 +131,12 @@ class CohortUsersTable extends Component {
         } = user;
         return {
           uid,
-          cohortId,
-          joined: entries[uid].createdAt,
           displayName,
           role,
-          admin: !!new URLSearchParams(window.location.search.substring(1)).get('admin'),
+          cohortId,
+          joined: entries[uid].createdAt,
+          lastCheckIn: lastCheckIns[i],
+          admin: !!getQueryString('admin'),
           selected: currentUser.uid === uid
         };
       });

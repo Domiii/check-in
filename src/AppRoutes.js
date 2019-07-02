@@ -15,7 +15,7 @@ import Home from './pages/Home';
 import CohortPage from './features/cohorts/components/CohortPage';
 import CohortsPage from './features/cohorts/components/CohortsPage';
 
-import UserPage from './pages/UserPage';
+import UserPage from 'features/users/components/UserPage';
 import AdminPage from './pages/AdminPage';
 
 import NotFound404 from './pages/NotFound404';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import CohortPanel from './CohortPanel';
+import CohortView from './CohortView';
 import CohortsPanel from './CohortsPanel';
 import CohortTable from './CohortTable';
 import connect from 'connect';
@@ -13,7 +13,7 @@ class CohortsPage extends Component {
     //const { match: { params: { mine } } } = this.props;
 
     // if (cohortId) {
-    //   return <CohortPanel cohortId={cohortId} />;
+    //   return <CohortView cohortId={cohortId} />;
     // }
     // else 
     {

@@ -77,14 +77,16 @@ class RouteBtn extends Component {
 class AdminPages extends React.Component {
 
   render() {
-    if (!hasRole(this.props.currentUser.displayRole, 'Admin')) {
+    const role = this.props.currentUser.displayRole;
+    if (!hasRole(role, 'Admin')) {
       return '';
     }
 
     return (<>
       <div className="divider-vertical" />
       <RouteBtn route={'/users'}>Users</RouteBtn>
-      <RouteBtn route={'/admin'}><Badge color="danger">Dev</Badge></RouteBtn>
+      <RouteBtn route={'/admin'}>Admin</RouteBtn>
+      { hasRole(role, 'Dev') && <RouteBtn route={'/dev'}><Badge color="danger">Dev</Badge></RouteBtn> }
     </>);
   }
 }
@@ -143,8 +145,10 @@ class MenuAppBar extends React.Component {
     const open = Boolean(anchorEl);
 
     const { cohortId } = currentUser;
-    const cohortPath = cohortId ? '/cohort/' + cohortId : '/cohorts';
-    const cohortsTitle = cohortId && cohorts.getCohortName(cohortId) || 'My Cohorts';
+    //const cohortPath = cohortId ? '/cohort/' + cohortId : '/cohorts';
+    const cohortPath = '/cohorts';
+    //const cohortsTitle = cohortId && cohorts.getCohortName(cohortId) || 'My Cohorts';
+    const cohortsTitle = 'Cohorts';
 
     return (
       <div className={classes.root}>

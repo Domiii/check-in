@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import connect from 'connect';
 import CurrentUser from '../api/CurrentUser';
-import MyCohortsOverview from '../features/cohorts/components/MyCohortsOverview';
+import UserCohortsOverview from 'features/cohorts/components/UserCohortsOverview';
 import renderLoadingIfNotLoaded from '../components/renderLoadingIfNotLoaded';
 import Loading from '../components/Loading';
 
@@ -11,13 +11,13 @@ class Home extends Component {
   state = {}
   render() {
     const { currentUser } = this.props;
-    const { isLoaded } = currentUser;
+    const { uid, isLoaded } = currentUser;
 
     if (!isLoaded()) { return <Loading centered={true} />; }
 
     return <div className="full-width">
       <div className="space-2" />
-      <MyCohortsOverview />
+      <UserCohortsOverview uid={uid} />
     </div>
   }
 }

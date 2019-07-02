@@ -42,11 +42,14 @@ class UserPrivBtn extends Component {
 
   render() {
     const { currentUser, uid, role, children, priv } = this.props;
+    const targetRole = RoleId[priv];
+    const canDo = currentUser.isAdmin() && currentUser.hasRole(targetRole+1);
     const has = hasRole(role, priv);
+    
     return (<Button
       color={has && 'success' || 'danger'}
       active={has}
-      disabled={currentUser.uid === uid}
+      disabled={!canDo || currentUser.uid === uid}
       onClick={this.onClick}
     >{children}</Button>);
   }
@@ -83,6 +86,7 @@ class UsersList extends Component {
               <UserPrivBtn priv="Guest" {...user}>Guest</UserPrivBtn>
               <UserPrivBtn priv="User" {...user}>User</UserPrivBtn>
               <UserPrivBtn priv="Admin" {...user}>Admin</UserPrivBtn>
+              <UserPrivBtn priv="Dev" {...user}>Dev</UserPrivBtn>
             </ButtonGroup>
           </ListItemSecondaryAction>
         </ListItem>))}

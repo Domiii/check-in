@@ -52,6 +52,10 @@ export default class CurrentUser extends ContainerEx {
 
     isAdmin: () => {
       return this.state.hasRole(RoleId.Admin);
+    },
+
+    isDev: () => {
+      return this.state.hasRole(RoleId.Dev);
     }
   };
 

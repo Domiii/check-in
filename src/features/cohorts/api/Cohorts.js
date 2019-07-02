@@ -95,15 +95,15 @@ class Cohorts extends FirestoreContainer {
 
         return snap.exists && Object.keys(snap.data()) || EmptyArray;
       },
-      getAllCohortEntriesOfUser(cohortIds, uid) {
-        const entries = cohortIds.map(cohortId => this.getCohortUserEntry(cohortId, uid));
+      getAllCohortUserEntries(uid, cohortIds) {
+        const entries = cohortIds.map(cohortId => this.getCohortUserEntry(uid, cohortId));
         if (!entries.reduce((acc, next) => !!acc && !!next, true)) {
           // make sure to only return all once all have loaded and not return partial results
           return NotLoaded;
         }
         return entries.map((entry, i) => ({...entry, cohortId: cohortIds[i]}));
       },
-      getCohortUserEntry(cohortId, uid) {
+      getCohortUserEntry(uid, cohortId) {
         const snap = this.cohortUserEntries(cohortId);
         if (snap === NotLoaded) { return NotLoaded; }
         return snap.exists && snap.data()[uid] || null;
@@ -155,7 +155,11 @@ class Cohorts extends FirestoreContainer {
           // expired
           return { error: 'Code expired' };
         }
-        return await this.addUserToCohort(cohortId, uid);
+        return await this.addUserToCohort(uid, cohortId);
+      },
+
+      async updateCohort(cohortId, cohort) {
+        return this.doc(cohortId).update(cohort);
       },
 
       // let currentUser leave cohort
@@ -165,7 +169,7 @@ class Cohorts extends FirestoreContainer {
           return null;
         }
 
-        return await this.removeUserFromCohort(cohortId, uid);
+        return await this.removeUserFromCohort(uid, cohortId);
       },
 
       // create new cohort
@@ -200,10 +204,10 @@ class Cohorts extends FirestoreContainer {
         });
       },
 
-      async addUserToCohort(cohortId, uid) {
+      async addUserToCohort(uid, cohortId) {
         // make sure, user has not been added already
         let existingEntry;
-        while ((existingEntry = this.getCohortUserEntry(cohortId, uid)) === NotLoaded) {
+        while ((existingEntry = this.getCohortUserEntry(uid, cohortId)) === NotLoaded) {
           await sleep(50);
         }
         if (existingEntry) {
@@ -226,17 +230,17 @@ class Cohorts extends FirestoreContainer {
         batch.set(this.refs.cohortIdsOfUser.doc(uid), { [cohortId]: 1 }, MergeTrue);
         batch.set(this.doc(cohortId), { userCount: Increment }, MergeTrue);
 
-        batch.set(this.db.collection('users').doc(uid), { cohortId }, MergeTrue);
+        // batch.set(this.db.collection('users').doc(uid), { cohortId }, MergeTrue);  // set user's own cohortId
 
         await batch.commit();
         
         return { success: 1 };
       },
 
-      async removeUserFromCohort(cohortId, uid) {
+      async removeUserFromCohort(uid, cohortId) {
         // make sure, user has been added
         let existingEntry;
-        while ((existingEntry = this.getCohortUserEntry(cohortId, uid)) === NotLoaded) {
+        while ((existingEntry = this.getCohortUserEntry(uid, cohortId)) === NotLoaded) {
           await sleep(50);
         }
         if (!existingEntry) {

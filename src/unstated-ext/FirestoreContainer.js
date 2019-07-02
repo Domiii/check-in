@@ -81,7 +81,8 @@ export default class FirestoreContainer extends ContainerEx {
       queries,
       selectors,
       actions,
-      refs
+      refs,
+      functions
     } = this;
 
     if (values) {
@@ -106,6 +107,15 @@ export default class FirestoreContainer extends ContainerEx {
       // merge actions into `state` as well as into `this`
       Object.assign(this.state, actions);
       Object.assign(this, actions);
+    }
+
+    if (functions) {
+      // bind to this
+      functions = mapValues(functions, f => f.bind(this));
+
+      // merge functions into `state` as well as into `this`
+      Object.assign(this.state, functions);
+      Object.assign(this, functions);
     }
 
     if (refs) {
