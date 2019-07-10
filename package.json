@@ -81,9 +81,9 @@
   },
   "_moduleAliases": {
     "src": "src",
+    "features": "src/features",
     "api": "src/api",
     "components": "src/components",
-    "features": "src/features",
     "unstated-ext": "src/unstated-ext",
     "connect": "src/unstated-ext/connect.js"
   },
