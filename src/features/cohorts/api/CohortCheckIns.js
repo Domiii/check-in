@@ -18,17 +18,10 @@ class CohortCheckIns extends FirestoreContainer {
     };
   }
 
-  get values() {
-    return {
-      all: { ref: this.collection }
-    };
-  }
-
   get queries() {
     return {
       checkInsOfUser: {
-        query: (uid, cohortId, limit) => 
-          this.collection
+        query: (uid, cohortId, limit) => this.collection
           .where('uid', '==', uid)
           .where('cohortId', '==', cohortId)
           .orderBy('when', 'desc')

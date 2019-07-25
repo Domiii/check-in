@@ -16,6 +16,9 @@ import CohortPage from './features/cohorts/components/CohortPage';
 import CohortsPage from './features/cohorts/components/CohortsPage';
 
 import UserPage from 'features/users/components/UserPage';
+
+import UrlPreviewSandboxPage from 'features/iframely/components/UrlPreviewSandboxPage';
+
 import AdminPage from './pages/AdminPage';
 
 import NotFound404 from './pages/NotFound404';
@@ -85,6 +88,8 @@ export default function AppRoutes() {
       <UserRoute exact path="/" Comp={Home} />
       <UserRoute path="/cohorts/:mine?" Comp={CohortsPage} />
       <UserRoute path="/cohort/:cohortId?" Comp={CohortPage} />
+
+      <UserRoute path="/previews/sandbox" Comp={UrlPreviewSandboxPage} />
 
       <AdminRoute exact path="/users" Comp={UserPage} />
       <AdminRoute path="/admin/:category?" Comp={AdminPage} />

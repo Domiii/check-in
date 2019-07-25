@@ -30,20 +30,15 @@ class Cohorts extends FirestoreContainer {
     };
   }
 
-  get values() {
+  get queries() {
     return {
-      all: { ref: this.collection },
+      all: () => this.collection,
       allCohortsArray: {
-        ref: this.collection,
+        query: () => this.collection,
         map(snap) {
           return snap.docs.map(d => ({ cohortId: d.id, ...d.data() }));
         }
-      }
-    };
-  }
-
-  get queries() {
-    return {
+      },
       getCohort: {
         query: cohortId => this.doc(cohortId),
         map(snap) {

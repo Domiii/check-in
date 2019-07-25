@@ -6,11 +6,6 @@ export default class MarkdownTempStorage extends FirestoreContainer {
   static n = 'markdownTempStorage';
   _throttled = {};
 
-  get values() {
-    return {
-    };
-  }
-
   get queries() {
     return {
       byUser: {

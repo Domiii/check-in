@@ -157,6 +157,7 @@ class MenuAppBar extends React.Component {
           <Toolbar>
             <RouteBtn route={'/'}>Home</RouteBtn>
             <RouteBtn route={cohortPath}>{cohortsTitle}</RouteBtn>
+            <RouteBtn route={'/previews/sandbox'}>Sandbox</RouteBtn>
             {/* <RouteBtn route={'/log'}>My Journey</RouteBtn>
             <RouteBtn route={'/learning-path'}>Choices</RouteBtn> */}
             {currentUser.uid && <AdminPages />}

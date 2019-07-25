@@ -1,10 +1,21 @@
 # TODO
-* Only check in once every day / 8 hours apart
-* Admin can help people check in
-* fix cohort link in Navbar (no more "current cohortId" concept)
+
+* Get rid of values in FirestoreContainer (too much effort for too little gain)
+* Add a "most recent" iframely URL previews Page
+
 * Money + Payment tracking
 * A little prettier
 * more playful
+
+# Log
+
+## 2019/7/10
+* a little more work on iframely
+
+## Previously
+* Only check in once every day / 8 hours apart
+* Admin can help people check in
+* fix cohort link in Navbar (no more "current cohortId" concept)
 
 
 # Dev Log: How did I set things up?
@@ -48,7 +59,14 @@
     1. `npm i -S moment react-moment`
     1. `npm i -S react-bootstrap-table-next`
 1. Better testing
-    1. `jest-extended`
+    1. Load aliases
+        1. Add to setupFiles: `"<rootDir>/scripts/pre-test.js"`
+    1. Add `jest-extended`: `npm i -D jest-extended`
+    1. Add `enzyme`:
+        1. `npm i -D jest-extended enzyme enzyme-to-json jest-environment-enzyme jest-enzyme enzyme-adapter-react-16`
+        1. Add `"snapshotSerializers": ["enzyme-to-json/serializer"]`
+1. syntax highlighting
+    1. `npm i -S react-syntax-highlighter react-ace react-markdown`
 
 # TODO - Dev Log: document App Structure
 1. Navbar: `src/components/Navigation.js` 

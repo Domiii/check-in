@@ -1,10 +1,12 @@
 import FirestoreContainer from "unstated-ext/FirestoreContainer";
 
+import { queryUrlData } from './iframely';
+
 /**
- * Use iframely to get metadata and previews of any url.
+ * Use iframely to get and store metadata and previews of any url.
  */
-class UrlPreview extends FirestoreContainer {
-  static n = 'urlPreview';
+class UrlPreviews extends FirestoreContainer {
+  static n = 'urlPreviews';
   get refs() {
     return {
       
@@ -19,7 +21,9 @@ class UrlPreview extends FirestoreContainer {
 
   get queries() {
     return {
-      
+      queryUrl: async (url, format = 'oembed') => {
+        return queryUrlData(url, format);
+      }
     };
   }
 
@@ -30,7 +34,8 @@ class UrlPreview extends FirestoreContainer {
 
   get actions() {
     return {
+
     };
   }
 }
-export default UrlPreview;
+export default UrlPreviews;

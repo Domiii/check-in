@@ -65,15 +65,15 @@ it('can create cohorts', async () => {
   let { cohorts } = props;
 
   // start loading
-  let allCohortsArray = cohorts.allCohortsArray;
+  let allCohortsArray = cohorts.allCohortsArray();
   expect(allCohortsArray).toEqual(NotLoaded);
 
-  allCohortsArray = await waitForValueChange(() => cohorts.allCohortsArray, allCohortsArray);
+  allCohortsArray = await waitForValueChange(() => cohorts.allCohortsArray(), allCohortsArray);
 
   // add cohort
   const cohortDoc = await cohorts.createCohort('testCohort' + allCohortsArray.length);
 
   // new cohort must be in array
-  let newCohorts = await waitForValueChange(() => cohorts.allCohortsArray, allCohortsArray);
+  let newCohorts = await waitForValueChange(() => cohorts.allCohortsArray(), allCohortsArray);
   expect(newCohorts.filter(c => c.cohortId === cohortDoc.id).length).toEqual(1);
 });

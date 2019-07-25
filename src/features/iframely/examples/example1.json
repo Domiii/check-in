@@ -1,0 +1,55 @@
+{
+  "url": "https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript",
+  "meta": {
+    "site": "Stack Overflow",
+    "description": "How would I go about removing all of the child elements of a DOM node in JavaScript?  Say I have the following (ugly) HTML:  &lt;p id=\"foo\"&gt;     &lt;span&gt;hello&lt;/span&gt;     &lt;div&gt;wor...",
+    "canonical": "https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript",
+    "title": "Remove all child elements of a DOM node in JavaScript"
+  },
+  "links": {
+    "thumbnail": [
+      {
+        "media": {
+          "height": 316,
+          "width": 316
+        },
+        "content_length": 6562,
+        "rel": [
+          "thumbnail",
+          "og",
+          "ssl"
+        ],
+        "type": "image/png",
+        "href": "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded"
+      }
+    ],
+    "icon": [
+      {
+        "type": "image/png",
+        "rel": [
+          "apple-touch-icon",
+          "image_src",
+          "icon",
+          "ssl"
+        ],
+        "href": "https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a"
+      },
+      {
+        "type": "image/icon",
+        "rel": [
+          "shortcut",
+          "icon",
+          "ssl"
+        ],
+        "href": "https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d"
+      }
+    ]
+  },
+  "rel": [
+    "summary",
+    "ssl",
+    "html5",
+    "inline"
+  ],
+  "html": "<div class=\"iframely-embed\"><div class=\"iframely-responsive\" style=\"height: 140px; padding-bottom: 0;\"><a href=\"https://stackoverflow.com/questions/3955229/remove-all-child-elements-of-a-dom-node-in-javascript\" data-iframely-url=\"//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F3955229%2Fremove-all-child-elements-of-a-dom-node-in-javascript&amp;key=46a04af030194a9cbf4762017b669060\"></a></div></div><script async src=\"//cdn.iframe.ly/embed.js\" charset=\"utf-8\"></script>"
+}

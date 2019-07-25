@@ -77,7 +77,6 @@ export default class FirestoreContainer extends ContainerEx {
     this.collection = db.collection(collectionName);
 
     let {
-      values,
       queries,
       selectors,
       actions,
@@ -85,9 +84,9 @@ export default class FirestoreContainer extends ContainerEx {
       functions
     } = this;
 
-    if (values) {
-      this.registerValues(values);
-    }
+    // if (values) {
+    //   this.registerValues(values);
+    // }
 
     this.registerQueries(queries);
 
@@ -145,94 +144,94 @@ export default class FirestoreContainer extends ContainerEx {
     }
   }
 
-  registerValues = (config) => {
-    const _originalState = this.state || {};
-    for (let name in config) {
-      let cfg = config[name];
+  // registerValues = (config) => {
+  //   const _originalState = this.state || {};
+  //   for (let name in config) {
+  //     let cfg = config[name];
 
-      if (cfg.onSnapshot
-        // cfg instanceof Firebase.firestore.DocumentReference ||
-        // cfg instanceof Firebase.firestore.CollectionReference ||
-        // cfg instanceof Firebase.firestore.Query
-      ) {
-        // the actual reference
-        cfg = {
-          ref: cfg
-        }
-      }
+  //     if (cfg.onSnapshot
+  //       // cfg instanceof Firebase.firestore.DocumentReference ||
+  //       // cfg instanceof Firebase.firestore.CollectionReference ||
+  //       // cfg instanceof Firebase.firestore.Query
+  //     ) {
+  //       // the actual reference
+  //       cfg = {
+  //         ref: cfg
+  //       }
+  //     }
 
-      let {
-        ref,
-        map: mapFn,
-        mergeRoot
-      } = config[name];
+  //     let {
+  //       ref,
+  //       map: mapFn,
+  //       mergeRoot
+  //     } = config[name];
 
-      if (!ref) {
-        throw new Error(`ref was not provided in ${this}.values.${name}`);
-      }
+  //     if (!ref) {
+  //       throw new Error(`ref was not provided in ${this}.values.${name}`);
+  //     }
 
-      if (mapFn) {
-        mapFn = mapFn.bind(this);
-      }
-      if (mergeRoot) {
-        mergeRoot = mergeRoot.bind(this);
-      }
+  //     if (mapFn) {
+  //       mapFn = mapFn.bind(this);
+  //     }
+  //     if (mergeRoot) {
+  //       mergeRoot = mergeRoot.bind(this);
+  //     }
 
-      const registration = {
-        ref,
-        mapFn,
-        mergeRoot
-      };
+  //     const registration = {
+  //       ref,
+  //       mapFn,
+  //       mergeRoot
+  //     };
 
-      // register
-      this._registered.set(name, registration);
+  //     // register
+  //     this._registered.set(name, registration);
 
-      // register a proxy call
-      Object.defineProperty(_originalState, name, {
-          configurable: true,
-          enumerable: true,
-          get: () => {
-            //console.warn('GET value', name);
-            if (registration.unsub) {
-              // already registered snapshot listeners
-              return registration.value;
-            }
+  //     // register a proxy call
+  //     Object.defineProperty(_originalState, name, {
+  //         configurable: true,
+  //         enumerable: true,
+  //         get: () => {
+  //           //console.warn('GET value', name);
+  //           if (registration.unsub) {
+  //             // already registered snapshot listeners
+  //             return registration.value;
+  //           }
 
-            // the first time we access this query, register a listener
-            registration.unsub = ref.onSnapshot(async snap => {
-              //console.warn('onSnapshot', name, snap.docs && snap.docs.length);
-              let result;
-              if (mapFn) {
-                //const oldState = this.state[name];
-                result = loadedValue(await mapFn(snap));
-              } else {
-                result = snap;
-              }
+  //           // the first time we access this query, register a listener
+  //           registration.unsub = ref.onSnapshot(async snap => {
+  //             //console.warn('onSnapshot', name, snap.docs && snap.docs.length);
+  //             let result;
+  //             if (mapFn) {
+  //               //const oldState = this.state[name];
+  //               result = loadedValue(await mapFn(snap));
+  //             } else {
+  //               result = loadedValue(snap);
+  //             }
 
-              // set state for given path
-              registration.value = result;
-              let stateUpd = {
-                [name]: result
-              };
+  //             // set state for given path
+  //             registration.value = result;
+  //             let stateUpd = {
+  //               [name]: result
+  //             };
 
-              if (mergeRoot) {
-                // merge back into root
-                const res = await mergeRoot(snap, name, ref);
-                Object.assign(stateUpd, res);
-              }
+  //             if (mergeRoot) {
+  //               // merge back into root
+  //               const res = await mergeRoot(snap, name, ref);
+  //               Object.assign(stateUpd, res);
+  //             }
 
-              //console.warn(stateUpd);
+  //             //console.warn(stateUpd);
 
-              this.setState(stateUpd);
-            });
+  //             this.setState(stateUpd);
+  //           });
             
-            // not loaded on first attempt
-            return NotLoaded;
-          }
-      });
-    }
-    this.state = _originalState;
-  }
+  //           // not loaded on first attempt
+  //           return NotLoaded;
+  //         }
+  //     });
+  //   }
+  //   this.state = _originalState;
+  // }
 
   registerQueries = config => {
     const _queryStates = {};
@@ -248,7 +247,7 @@ export default class FirestoreContainer extends ContainerEx {
           query: cfg
         }
       }
-      else if (cfg.onSnapshot
+      else if (cfg.onSnapshot || cfg.get
         // cfg instanceof Firebase.firestore.DocumentReference ||
         // cfg instanceof Firebase.firestore.CollectionReference ||
         // cfg instanceof Firebase.firestore.Query
@@ -357,22 +356,34 @@ export default class FirestoreContainer extends ContainerEx {
 
       const ref = query(...args);
 
-      if (!ref || !ref.onSnapshot) {
+      if (!ref || (!ref.onSnapshot && !ref.then)) {
         throw new Error(fullName + ` - Query function did not (but must) return a firebase Query, DocumentReference or otherwise implement a corresponding onSnapshot function.`);
       }
-      const unsub = ref.onSnapshot(async snap => {
+
+      const handleSnapshot = async snap => {
+        snap = await snap;  // make sure, possible promise is resolved
+
         let result;
         if (mapFn) {
           result = loadedValue(await mapFn(snap, ...args));
         } else {
-          result = snap;
+          result = loadedValue(snap);
         }
 
+        // put in cache
         this._updateQueryCache(name, argsPath, result);
-      });
+      };
 
-      // TODO: when unsubbing, also need to reset loadStatus (+ cache)
-      registration.unsub = unsub;
+      if (ref.onSnapshot) {
+        // subscribe: will receive updates on changes over time
+        const unsub = ref.onSnapshot(handleSnapshot);
+        // TODO: when unsubbing, also need to reset loadStatus (+ cache)
+        registration.unsub = unsub;
+      }
+      else if (ref.then) {
+        // one shot value
+        handleSnapshot(ref);
+      }
     }
 
     //console.warn(fullName, argsPath, queryState.cache[argsPath]);
